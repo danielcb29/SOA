@@ -10,38 +10,45 @@ public class XMLReader {
 	
 	public static void main(String[] args){
 		   try {
-		
-				File fXmlFile = new File("src/information.xml");
-				DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-				DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-				Document doc = dBuilder.parse(fXmlFile);
-						
+			   	//Abrir el archivo xml
+				File XMLFile = new File("src/catastro2.xml");
+				//Obtenemos el xml en un Document DOM para poder poder procesarlo
+				Document DOM = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(XMLFile);
 				//optional, but recommended
 				//read this - http://stackoverflow.com/questions/13786607/normalization-in-dom-parsing-with-java-how-does-it-work
-				doc.getDocumentElement().normalize();
-		
-				System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
-						
-				NodeList nList = doc.getElementsByTagName("staff");
-						
+				//Normalizamos la información para poder mostrarla en organizada
+				DOM.getDocumentElement().normalize();
+				//Imprimimos el elemento raiz del DOM
+				System.out.println("Element raiz:" + DOM.getDocumentElement().getNodeName());
+				//Obtenemos el nodo provincias para saber de donde obtenemos la información
+				Node nodeProvincias = DOM.getElementsByTagName("Provincias").item(0);
+				Element provinciasElement = (Element) nodeProvincias; //Casting a Element para poder obtener la información
+				//Imprimimos la direccion del servidor xmlns
+				System.out.println("Información obtenida de: "+ (provinciasElement.getAttribute("xmlns")));
+				//Numero de control provinciero
+				//Node nodeProvincias = DOM.getElementsByTagName("Provincias").item(0);
+				//Obtenemos los nodos de nombre "prov" en una lista DOM
+				NodeList listNodes = DOM.getElementsByTagName("prov");
 				System.out.println("----------------------------");
+				System.out.println("INFORMACIÓN CATASTRO");
+				System.out.println("----------------------------");
+				//Recorremos la lista DOM de nodos nombre ...
+				for (int i = 0; i < listNodes.getLength(); i++) {
+					//Obtenemos el nodo DOM i-esimo
+					Node iNode = listNodes.item(i);
+					//Imprimimos el nombre del nodo
+					System.out.println("\nNodo Actual :" + iNode.getNodeName());
+					
+					if (iNode.getNodeType() == Node.ELEMENT_NODE) {
+						//System.out.println("Adentro");
+						Element eElement = (Element) iNode;
 		
-				for (int temp = 0; temp < nList.getLength(); temp++) {
-		
-					Node nNode = nList.item(temp);
-							
-					System.out.println("\nCurrent Element :" + nNode.getNodeName());
-							
-					if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-		
-						Element eElement = (Element) nNode;
-		
-						System.out.println("Staff id : " + eElement.getAttribute("id"));
+						/*System.out.println("Staff id : " + eElement.getAttribute("id"));
 						System.out.println("First Name : " + eElement.getElementsByTagName("firstname").item(0).getTextContent());
 						System.out.println("Last Name : " + eElement.getElementsByTagName("lastname").item(0).getTextContent());
 						System.out.println("Nick Name : " + eElement.getElementsByTagName("nickname").item(0).getTextContent());
 						System.out.println("Salary : " + eElement.getElementsByTagName("salary").item(0).getTextContent());
-		
+						*/
 					}
 				}
 		    } catch (Exception e) {
