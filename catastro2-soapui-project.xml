@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="db3e2f03-8003-45b2-997c-eeed4b820de5" activeEnvironment="Default" name="catastro2" resourceRoot="" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="35e6cae0-1e3f-4ef2-9e09-6733d0481e9f" wsaVersion="NONE" name="Callejero_x0020_de_x0020_la_x0020_sede_x0020_electrónica_x0020_del_x0020_catastro.Soap" type="wsdl" bindingName="{http://tempuri.org/OVCServWeb/OVCCallejero}Callejero_x0020_de_x0020_la_x0020_sede_x0020_electrónica_x0020_del_x0020_catastro.Soap" soapVersion="1_1" anonymous="optional" definition="http://ovc.catastro.meh.es/ovcservweb/OVCSWLocalizacionRC/OVCCallejero.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://ovc.catastro.meh.es/ovcservweb/OVCSWLocalizacionRC/OVCCallejero.asmx?WSDL"><con:part><con:url>http://ovc.catastro.meh.es/ovcservweb/OVCSWLocalizacionRC/OVCCallejero.asmx?WSDL</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://tempuri.org/OVCServWeb/OVCCallejero" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/OVCServWeb/OVCCallejero" xmlns:s0="http://www.catastro.meh.es/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>Servicios de consulta del callejero de la sede electrónica del catastro.</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.catastro.meh.es/">
+      <s:element name="Provincia" type="s:string"/>
+      <s:element name="Municipio" type="s:string"/>
+      <s:element name="RefCat" type="s:string"/>
+      <s:element name="Consulta_DNP">
+        <s:complexType mixed="true">
+          <s:sequence>
+            <s:any/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Provincias">
+        <s:complexType mixed="true">
+          <s:sequence>
+            <s:any/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Municipios">
+        <s:complexType mixed="true">
+          <s:sequence>
+            <s:any/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TipoVia" type="s:string"/>
+      <s:element name="NombreVia" type="s:string"/>
+      <s:element name="Callejero">
+        <s:complexType mixed="true">
+          <s:sequence>
+            <s:any/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NomVia" type="s:string"/>
+      <s:element name="Numero" type="s:string"/>
+      <s:element name="Sigla" type="s:string"/>
+      <s:element name="Calle" type="s:string"/>
+      <s:element name="Bloque" type="s:string"/>
+      <s:element name="Escalera" type="s:string"/>
+      <s:element name="Planta" type="s:string"/>
+      <s:element name="Puerta" type="s:string"/>
+      <s:element name="Poligono" type="s:string"/>
+      <s:element name="Parcela" type="s:string"/>
+      <s:element name="Consulta_DNPPP">
+        <s:complexType mixed="true">
+          <s:sequence>
+            <s:any/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Consulta_DNPRCSoapIn">
+    <wsdl:part name="Provincia" element="s0:Provincia"/>
+    <wsdl:part name="Municipio" element="s0:Municipio"/>
+    <wsdl:part name="RC" element="s0:RefCat"/>
+  </wsdl:message>
+  <wsdl:message name="Consulta_DNPRCSoapOut">
+    <wsdl:part name="Consulta_DNPRCResult" element="s0:Consulta_DNP"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultaProvinciaSoapIn"/>
+  <wsdl:message name="ConsultaProvinciaSoapOut">
+    <wsdl:part name="ConsultaProvinciaResult" element="s0:Provincias"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultaMunicipioSoapIn">
+    <wsdl:part name="Provincia" element="s0:Provincia"/>
+    <wsdl:part name="Municipio" element="s0:Municipio"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultaMunicipioSoapOut">
+    <wsdl:part name="ConsultaMunicipioResult" element="s0:Municipios"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultaViaSoapIn">
+    <wsdl:part name="Provincia" element="s0:Provincia"/>
+    <wsdl:part name="Municipio" element="s0:Municipio"/>
+    <wsdl:part name="TipoVia" element="s0:TipoVia"/>
+    <wsdl:part name="NombreVia" element="s0:NombreVia"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultaViaSoapOut">
+    <wsdl:part name="ConsultaViaResult" element="s0:Callejero"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultaNumeroSoapIn">
+    <wsdl:part name="Provincia" element="s0:Provincia"/>
+    <wsdl:part name="Municipio" element="s0:Municipio"/>
+    <wsdl:part name="TipoVia" element="s0:TipoVia"/>
+    <wsdl:part name="NomVia" element="s0:NomVia"/>
+    <wsdl:part name="Numero" element="s0:Numero"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultaNumeroSoapOut">
+    <wsdl:part name="ConsultaNumeroResult" element="s0:Callejero"/>
+  </wsdl:message>
+  <wsdl:message name="Consulta_DNPLOCSoapIn">
+    <wsdl:part name="Provincia" element="s0:Provincia"/>
+    <wsdl:part name="Municipio" element="s0:Municipio"/>
+    <wsdl:part name="Sigla" element="s0:Sigla"/>
+    <wsdl:part name="Calle" element="s0:Calle"/>
+    <wsdl:part name="Numero" element="s0:Numero"/>
+    <wsdl:part name="Bloque" element="s0:Bloque"/>
+    <wsdl:part name="Escalera" element="s0:Escalera"/>
+    <wsdl:part name="Planta" element="s0:Planta"/>
+    <wsdl:part name="Puerta" element="s0:Puerta"/>
+  </wsdl:message>
+  <wsdl:message name="Consulta_DNPLOCSoapOut">
+    <wsdl:part name="Consulta_DNPLOCResult" element="s0:Consulta_DNP"/>
+  </wsdl:message>
+  <wsdl:message name="Consulta_DNPPPSoapIn">
+    <wsdl:part name="Provincia" element="s0:Provincia"/>
+    <wsdl:part name="Municipio" element="s0:Municipio"/>
+    <wsdl:part name="Poligono" element="s0:Poligono"/>
+    <wsdl:part name="Parcela" element="s0:Parcela"/>
+  </wsdl:message>
+  <wsdl:message name="Consulta_DNPPPSoapOut">
+    <wsdl:part name="Consulta_DNPPPResult" element="s0:Consulta_DNPPP"/>
+  </wsdl:message>
+  <wsdl:message name="Consulta_DNPRCHttpGetIn">
+    <wsdl:part name="Provincia" type="s:string"/>
+    <wsdl:part name="Municipio" type="s:string"/>
+    <wsdl:part name="RC" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="Consulta_DNPRCHttpGetOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultaProvinciaHttpGetIn"/>
+  <wsdl:message name="ConsultaProvinciaHttpGetOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultaMunicipioHttpGetIn">
+    <wsdl:part name="Provincia" type="s:string"/>
+    <wsdl:part name="Municipio" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultaMunicipioHttpGetOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultaViaHttpGetIn">
+    <wsdl:part name="Provincia" type="s:string"/>
+    <wsdl:part name="Municipio" type="s:string"/>
+    <wsdl:part name="TipoVia" type="s:string"/>
+    <wsdl:part name="NombreVia" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultaViaHttpGetOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultaNumeroHttpGetIn">
+    <wsdl:part name="Provincia" type="s:string"/>
+    <wsdl:part name="Municipio" type="s:string"/>
+    <wsdl:part name="TipoVia" type="s:string"/>
+    <wsdl:part name="NomVia" type="s:string"/>
+    <wsdl:part name="Numero" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultaNumeroHttpGetOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="Consulta_DNPLOCHttpGetIn">
+    <wsdl:part name="Provincia" type="s:string"/>
+    <wsdl:part name="Municipio" type="s:string"/>
+    <wsdl:part name="Sigla" type="s:string"/>
+    <wsdl:part name="Calle" type="s:string"/>
+    <wsdl:part name="Numero" type="s:string"/>
+    <wsdl:part name="Bloque" type="s:string"/>
+    <wsdl:part name="Escalera" type="s:string"/>
+    <wsdl:part name="Planta" type="s:string"/>
+    <wsdl:part name="Puerta" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="Consulta_DNPLOCHttpGetOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="Consulta_DNPPPHttpGetIn">
+    <wsdl:part name="Provincia" type="s:string"/>
+    <wsdl:part name="Municipio" type="s:string"/>
+    <wsdl:part name="Poligono" type="s:string"/>
+    <wsdl:part name="Parcela" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="Consulta_DNPPPHttpGetOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="Consulta_DNPRCHttpPostIn">
+    <wsdl:part name="Provincia" type="s:string"/>
+    <wsdl:part name="Municipio" type="s:string"/>
+    <wsdl:part name="RC" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="Consulta_DNPRCHttpPostOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultaProvinciaHttpPostIn"/>
+  <wsdl:message name="ConsultaProvinciaHttpPostOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultaMunicipioHttpPostIn">
+    <wsdl:part name="Provincia" type="s:string"/>
+    <wsdl:part name="Municipio" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultaMunicipioHttpPostOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultaViaHttpPostIn">
+    <wsdl:part name="Provincia" type="s:string"/>
+    <wsdl:part name="Municipio" type="s:string"/>
+    <wsdl:part name="TipoVia" type="s:string"/>
+    <wsdl:part name="NombreVia" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultaViaHttpPostOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultaNumeroHttpPostIn">
+    <wsdl:part name="Provincia" type="s:string"/>
+    <wsdl:part name="Municipio" type="s:string"/>
+    <wsdl:part name="TipoVia" type="s:string"/>
+    <wsdl:part name="NomVia" type="s:string"/>
+    <wsdl:part name="Numero" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultaNumeroHttpPostOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="Consulta_DNPLOCHttpPostIn">
+    <wsdl:part name="Provincia" type="s:string"/>
+    <wsdl:part name="Municipio" type="s:string"/>
+    <wsdl:part name="Sigla" type="s:string"/>
+    <wsdl:part name="Calle" type="s:string"/>
+    <wsdl:part name="Numero" type="s:string"/>
+    <wsdl:part name="Bloque" type="s:string"/>
+    <wsdl:part name="Escalera" type="s:string"/>
+    <wsdl:part name="Planta" type="s:string"/>
+    <wsdl:part name="Puerta" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="Consulta_DNPLOCHttpPostOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="Consulta_DNPPPHttpPostIn">
+    <wsdl:part name="Provincia" type="s:string"/>
+    <wsdl:part name="Municipio" type="s:string"/>
+    <wsdl:part name="Poligono" type="s:string"/>
+    <wsdl:part name="Parcela" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="Consulta_DNPPPHttpPostOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:portType name="Callejero_x0020_de_x0020_la_x0020_sede_x0020_electrónica_x0020_del_x0020_catastro.Soap">
+    <wsdl:operation name="Consulta_DNPRC">
+      <wsdl:documentation>Servicio de consulta de datos no protegidos para un inmueble por su referencia catastral.</wsdl:documentation>
+      <wsdl:input message="tns:Consulta_DNPRCSoapIn"/>
+      <wsdl:output message="tns:Consulta_DNPRCSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerProvincias">
+      <wsdl:documentation>Servicio de consulta de provincias.</wsdl:documentation>
+      <wsdl:input name="ConsultaProvincia" message="tns:ConsultaProvinciaSoapIn"/>
+      <wsdl:output name="ConsultaProvincia" message="tns:ConsultaProvinciaSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerMunicipios">
+      <wsdl:documentation>Servicio de consulta de municipios para una provincia.</wsdl:documentation>
+      <wsdl:input name="ConsultaMunicipio" message="tns:ConsultaMunicipioSoapIn"/>
+      <wsdl:output name="ConsultaMunicipio" message="tns:ConsultaMunicipioSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCallejero">
+      <wsdl:documentation>Servicio de consulta de vias para un municipio.</wsdl:documentation>
+      <wsdl:input name="ConsultaVia" message="tns:ConsultaViaSoapIn"/>
+      <wsdl:output name="ConsultaVia" message="tns:ConsultaViaSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerNumerero">
+      <wsdl:documentation>Servicio de consulta de números para una via.</wsdl:documentation>
+      <wsdl:input name="ConsultaNumero" message="tns:ConsultaNumeroSoapIn"/>
+      <wsdl:output name="ConsultaNumero" message="tns:ConsultaNumeroSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Consulta_DNPLOC">
+      <wsdl:documentation>Servicio de consulta de datos no protegidos para un inmueble por su localización.</wsdl:documentation>
+      <wsdl:input message="tns:Consulta_DNPLOCSoapIn"/>
+      <wsdl:output message="tns:Consulta_DNPLOCSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Consulta_DNPPP">
+      <wsdl:documentation>Servicio de consulta de datos no protegidos para un inmueble por su polígono parcela.</wsdl:documentation>
+      <wsdl:input message="tns:Consulta_DNPPPSoapIn"/>
+      <wsdl:output message="tns:Consulta_DNPPPSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="Callejero_x0020_de_x0020_la_x0020_sede_x0020_electrónica_x0020_del_x0020_catastro.HttpGet">
+    <wsdl:operation name="Consulta_DNPRC">
+      <wsdl:documentation>Servicio de consulta de datos no protegidos para un inmueble por su referencia catastral.</wsdl:documentation>
+      <wsdl:input message="tns:Consulta_DNPRCHttpGetIn"/>
+      <wsdl:output message="tns:Consulta_DNPRCHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerProvincias">
+      <wsdl:documentation>Servicio de consulta de provincias.</wsdl:documentation>
+      <wsdl:input name="ConsultaProvincia" message="tns:ConsultaProvinciaHttpGetIn"/>
+      <wsdl:output name="ConsultaProvincia" message="tns:ConsultaProvinciaHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerMunicipios">
+      <wsdl:documentation>Servicio de consulta de municipios para una provincia.</wsdl:documentation>
+      <wsdl:input name="ConsultaMunicipio" message="tns:ConsultaMunicipioHttpGetIn"/>
+      <wsdl:output name="ConsultaMunicipio" message="tns:ConsultaMunicipioHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCallejero">
+      <wsdl:documentation>Servicio de consulta de vias para un municipio.</wsdl:documentation>
+      <wsdl:input name="ConsultaVia" message="tns:ConsultaViaHttpGetIn"/>
+      <wsdl:output name="ConsultaVia" message="tns:ConsultaViaHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerNumerero">
+      <wsdl:documentation>Servicio de consulta de números para una via.</wsdl:documentation>
+      <wsdl:input name="ConsultaNumero" message="tns:ConsultaNumeroHttpGetIn"/>
+      <wsdl:output name="ConsultaNumero" message="tns:ConsultaNumeroHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Consulta_DNPLOC">
+      <wsdl:documentation>Servicio de consulta de datos no protegidos para un inmueble por su localización.</wsdl:documentation>
+      <wsdl:input message="tns:Consulta_DNPLOCHttpGetIn"/>
+      <wsdl:output message="tns:Consulta_DNPLOCHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Consulta_DNPPP">
+      <wsdl:documentation>Servicio de consulta de datos no protegidos para un inmueble por su polígono parcela.</wsdl:documentation>
+      <wsdl:input message="tns:Consulta_DNPPPHttpGetIn"/>
+      <wsdl:output message="tns:Consulta_DNPPPHttpGetOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="Callejero_x0020_de_x0020_la_x0020_sede_x0020_electrónica_x0020_del_x0020_catastro.HttpPost">
+    <wsdl:operation name="Consulta_DNPRC">
+      <wsdl:documentation>Servicio de consulta de datos no protegidos para un inmueble por su referencia catastral.</wsdl:documentation>
+      <wsdl:input message="tns:Consulta_DNPRCHttpPostIn"/>
+      <wsdl:output message="tns:Consulta_DNPRCHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerProvincias">
+      <wsdl:documentation>Servicio de consulta de provincias.</wsdl:documentation>
+      <wsdl:input name="ConsultaProvincia" message="tns:ConsultaProvinciaHttpPostIn"/>
+      <wsdl:output name="ConsultaProvincia" message="tns:ConsultaProvinciaHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerMunicipios">
+      <wsdl:documentation>Servicio de consulta de municipios para una provincia.</wsdl:documentation>
+      <wsdl:input name="ConsultaMunicipio" message="tns:ConsultaMunicipioHttpPostIn"/>
+      <wsdl:output name="ConsultaMunicipio" message="tns:ConsultaMunicipioHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCallejero">
+      <wsdl:documentation>Servicio de consulta de vias para un municipio.</wsdl:documentation>
+      <wsdl:input name="ConsultaVia" message="tns:ConsultaViaHttpPostIn"/>
+      <wsdl:output name="ConsultaVia" message="tns:ConsultaViaHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerNumerero">
+      <wsdl:documentation>Servicio de consulta de números para una via.</wsdl:documentation>
+      <wsdl:input name="ConsultaNumero" message="tns:ConsultaNumeroHttpPostIn"/>
+      <wsdl:output name="ConsultaNumero" message="tns:ConsultaNumeroHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Consulta_DNPLOC">
+      <wsdl:documentation>Servicio de consulta de datos no protegidos para un inmueble por su localización.</wsdl:documentation>
+      <wsdl:input message="tns:Consulta_DNPLOCHttpPostIn"/>
+      <wsdl:output message="tns:Consulta_DNPLOCHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Consulta_DNPPP">
+      <wsdl:documentation>Servicio de consulta de datos no protegidos para un inmueble por su polígono parcela.</wsdl:documentation>
+      <wsdl:input message="tns:Consulta_DNPPPHttpPostIn"/>
+      <wsdl:output message="tns:Consulta_DNPPPHttpPostOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Callejero_x0020_de_x0020_la_x0020_sede_x0020_electrónica_x0020_del_x0020_catastro.Soap" type="tns:Callejero_x0020_de_x0020_la_x0020_sede_x0020_electrónica_x0020_del_x0020_catastro.Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Consulta_DNPRC">
+      <soap:operation soapAction="http://tempuri.org/OVCServWeb/OVCCallejero/Consulta_DNPRC" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerProvincias">
+      <soap:operation soapAction="http://tempuri.org/OVCServWeb/OVCCallejero/ConsultaProvincia" style="document"/>
+      <wsdl:input name="ConsultaProvincia">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="ConsultaProvincia">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerMunicipios">
+      <soap:operation soapAction="http://tempuri.org/OVCServWeb/OVCCallejero/ConsultaMunicipio" style="document"/>
+      <wsdl:input name="ConsultaMunicipio">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="ConsultaMunicipio">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCallejero">
+      <soap:operation soapAction="http://tempuri.org/OVCServWeb/OVCCallejero/ConsultaVia" style="document"/>
+      <wsdl:input name="ConsultaVia">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="ConsultaVia">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerNumerero">
+      <soap:operation soapAction="http://tempuri.org/OVCServWeb/OVCCallejero/ConsultaNumero" style="document"/>
+      <wsdl:input name="ConsultaNumero">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="ConsultaNumero">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consulta_DNPLOC">
+      <soap:operation soapAction="http://tempuri.org/OVCServWeb/OVCCallejero/Consulta_DNPLOC" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consulta_DNPPP">
+      <soap:operation soapAction="http://tempuri.org/OVCServWeb/OVCCallejero/Consulta_DNPPP" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Callejero_x0020_de_x0020_la_x0020_sede_x0020_electrónica_x0020_del_x0020_catastro.HttpGet" type="tns:Callejero_x0020_de_x0020_la_x0020_sede_x0020_electrónica_x0020_del_x0020_catastro.HttpGet">
+    <http:binding verb="GET"/>
+    <wsdl:operation name="Consulta_DNPRC">
+      <http:operation location="/Consulta_DNPRC"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerProvincias">
+      <http:operation location="/ConsultaProvincia"/>
+      <wsdl:input name="ConsultaProvincia">
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output name="ConsultaProvincia">
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerMunicipios">
+      <http:operation location="/ConsultaMunicipio"/>
+      <wsdl:input name="ConsultaMunicipio">
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output name="ConsultaMunicipio">
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCallejero">
+      <http:operation location="/ConsultaVia"/>
+      <wsdl:input name="ConsultaVia">
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output name="ConsultaVia">
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerNumerero">
+      <http:operation location="/ConsultaNumero"/>
+      <wsdl:input name="ConsultaNumero">
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output name="ConsultaNumero">
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consulta_DNPLOC">
+      <http:operation location="/Consulta_DNPLOC"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consulta_DNPPP">
+      <http:operation location="/Consulta_DNPPP"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Callejero_x0020_de_x0020_la_x0020_sede_x0020_electrónica_x0020_del_x0020_catastro.HttpPost" type="tns:Callejero_x0020_de_x0020_la_x0020_sede_x0020_electrónica_x0020_del_x0020_catastro.HttpPost">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="Consulta_DNPRC">
+      <http:operation location="/Consulta_DNPRC"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerProvincias">
+      <http:operation location="/ConsultaProvincia"/>
+      <wsdl:input name="ConsultaProvincia">
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output name="ConsultaProvincia">
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerMunicipios">
+      <http:operation location="/ConsultaMunicipio"/>
+      <wsdl:input name="ConsultaMunicipio">
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output name="ConsultaMunicipio">
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCallejero">
+      <http:operation location="/ConsultaVia"/>
+      <wsdl:input name="ConsultaVia">
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output name="ConsultaVia">
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerNumerero">
+      <http:operation location="/ConsultaNumero"/>
+      <wsdl:input name="ConsultaNumero">
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output name="ConsultaNumero">
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consulta_DNPLOC">
+      <http:operation location="/Consulta_DNPLOC"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consulta_DNPPP">
+      <http:operation location="/Consulta_DNPPP"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Callejero_x0020_de_x0020_la_x0020_sede_x0020_electrónica_x0020_del_x0020_catastro.">
+    <wsdl:documentation>Servicios de consulta del callejero de la sede electrónica del catastro.</wsdl:documentation>
+    <wsdl:port name="Callejero_x0020_de_x0020_la_x0020_sede_x0020_electrónica_x0020_del_x0020_catastro.Soap" binding="tns:Callejero_x0020_de_x0020_la_x0020_sede_x0020_electrónica_x0020_del_x0020_catastro.Soap">
+      <soap:address location="http://ovc.catastro.meh.es/ovcservweb/OVCSWLocalizacionRC/OVCCallejero.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="Callejero_x0020_de_x0020_la_x0020_sede_x0020_electrónica_x0020_del_x0020_catastro.HttpGet" binding="tns:Callejero_x0020_de_x0020_la_x0020_sede_x0020_electrónica_x0020_del_x0020_catastro.HttpGet">
+      <http:address location="http://ovc.catastro.meh.es/ovcservweb/OVCSWLocalizacionRC/OVCCallejero.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="Callejero_x0020_de_x0020_la_x0020_sede_x0020_electrónica_x0020_del_x0020_catastro.HttpPost" binding="tns:Callejero_x0020_de_x0020_la_x0020_sede_x0020_electrónica_x0020_del_x0020_catastro.HttpPost">
+      <http:address location="http://ovc.catastro.meh.es/ovcservweb/OVCSWLocalizacionRC/OVCCallejero.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://ovc.catastro.meh.es/ovcservweb/OVCSWLocalizacionRC/OVCCallejero.asmx</con:endpoint></con:endpoints><con:operation id="24dc1896-a166-450d-9c9d-55207e1e68c4" isOneWay="false" action="http://tempuri.org/OVCServWeb/OVCCallejero/Consulta_DNPLOC" name="Consulta_DNPLOC" bindingOperationName="Consulta_DNPLOC" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="43417c56-2745-41c8-94f6-c3eba32ab4b9" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ovc.catastro.meh.es/ovcservweb/OVCSWLocalizacionRC/OVCCallejero.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cat="http://www.catastro.meh.es/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <cat:Provincia>?</cat:Provincia>
+      <cat:Municipio>?</cat:Municipio>
+      <cat:Sigla>?</cat:Sigla>
+      <cat:Calle>?</cat:Calle>
+      <cat:Numero>?</cat:Numero>
+      <cat:Bloque>?</cat:Bloque>
+      <cat:Escalera>?</cat:Escalera>
+      <cat:Planta>?</cat:Planta>
+      <cat:Puerta>?</cat:Puerta>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/OVCServWeb/OVCCallejero/Consulta_DNPLOC"/></con:call></con:operation><con:operation id="477605f1-9584-4ed9-bace-99db3c0eccc0" isOneWay="false" action="http://tempuri.org/OVCServWeb/OVCCallejero/Consulta_DNPPP" name="Consulta_DNPPP" bindingOperationName="Consulta_DNPPP" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c63fe9ef-c27e-43a7-a419-0e77ee7198af" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ovc.catastro.meh.es/ovcservweb/OVCSWLocalizacionRC/OVCCallejero.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cat="http://www.catastro.meh.es/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <cat:Provincia>?</cat:Provincia>
+      <cat:Municipio>?</cat:Municipio>
+      <cat:Poligono>?</cat:Poligono>
+      <cat:Parcela>?</cat:Parcela>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/OVCServWeb/OVCCallejero/Consulta_DNPPP"/></con:call></con:operation><con:operation id="abc6a33b-f71a-4bdd-b6d8-e1f979bef080" isOneWay="false" action="http://tempuri.org/OVCServWeb/OVCCallejero/Consulta_DNPRC" name="Consulta_DNPRC" bindingOperationName="Consulta_DNPRC" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4202c082-0b0d-43bd-b7b9-dca32f611499" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ovc.catastro.meh.es/ovcservweb/OVCSWLocalizacionRC/OVCCallejero.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cat="http://www.catastro.meh.es/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <cat:Provincia>?</cat:Provincia>
+      <cat:Municipio>?</cat:Municipio>
+      <cat:RefCat>?</cat:RefCat>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/OVCServWeb/OVCCallejero/Consulta_DNPRC"/></con:call></con:operation><con:operation id="f8f6bfb9-745a-4ca3-ac11-b6f28bf87820" isOneWay="false" action="http://tempuri.org/OVCServWeb/OVCCallejero/ConsultaVia" name="ObtenerCallejero" bindingOperationName="ObtenerCallejero" type="Request-Response" outputName="ConsultaVia" inputName="ConsultaVia" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c253eaa5-a7c8-4867-811c-df08ac082cdb" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ovc.catastro.meh.es/ovcservweb/OVCSWLocalizacionRC/OVCCallejero.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cat="http://www.catastro.meh.es/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <cat:Provincia>?</cat:Provincia>
+      <cat:Municipio>?</cat:Municipio>
+      <cat:TipoVia>?</cat:TipoVia>
+      <cat:NombreVia>?</cat:NombreVia>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/OVCServWeb/OVCCallejero/ConsultaVia"/></con:call></con:operation><con:operation id="19e2a4f9-fb36-4892-9550-67760d234ce8" isOneWay="false" action="http://tempuri.org/OVCServWeb/OVCCallejero/ConsultaMunicipio" name="ObtenerMunicipios" bindingOperationName="ObtenerMunicipios" type="Request-Response" outputName="ConsultaMunicipio" inputName="ConsultaMunicipio" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e9d7cb00-cfdf-4bbd-8f9d-bac3e4e442be" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ovc.catastro.meh.es/ovcservweb/OVCSWLocalizacionRC/OVCCallejero.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cat="http://www.catastro.meh.es/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <cat:Provincia>CACERES</cat:Provincia>
+      <cat:Municipio>MALPAR</cat:Municipio>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/OVCServWeb/OVCCallejero/ConsultaMunicipio"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="0096490a-a2f6-4638-82c7-57649d4fc151" isOneWay="false" action="http://tempuri.org/OVCServWeb/OVCCallejero/ConsultaNumero" name="ObtenerNumerero" bindingOperationName="ObtenerNumerero" type="Request-Response" outputName="ConsultaNumero" inputName="ConsultaNumero" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="592c8610-bd34-4484-81bc-23c20663d2c2" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ovc.catastro.meh.es/ovcservweb/OVCSWLocalizacionRC/OVCCallejero.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cat="http://www.catastro.meh.es/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <cat:Provincia>?</cat:Provincia>
+      <cat:Municipio>?</cat:Municipio>
+      <cat:TipoVia>?</cat:TipoVia>
+      <cat:NomVia>?</cat:NomVia>
+      <cat:Numero>?</cat:Numero>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/OVCServWeb/OVCCallejero/ConsultaNumero"/></con:call></con:operation><con:operation id="fd1d47bf-ae3d-4421-8ff5-65ba1130c00a" isOneWay="false" action="http://tempuri.org/OVCServWeb/OVCCallejero/ConsultaProvincia" name="ObtenerProvincias" bindingOperationName="ObtenerProvincias" type="Request-Response" outputName="ConsultaProvincia" inputName="ConsultaProvincia" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="046548b9-d3e9-4723-8c03-422ae6ecc7c0" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ovc.catastro.meh.es/ovcservweb/OVCSWLocalizacionRC/OVCCallejero.asmx</con:endpoint><con:request>&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   &lt;soapenv:Header/>
+   &lt;soapenv:Body/>
+&lt;/soapenv:Envelope></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/OVCServWeb/OVCCallejero/ConsultaProvincia"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:RestService" id="6474cf3b-3b4f-49bc-b569-2e47105cc1a1" wadlVersion="http://wadl.dev.java.net/2009/02" name="catastro2" type="rest" definitionUrl="porttype" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints/></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
