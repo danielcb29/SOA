@@ -14,8 +14,6 @@ public class XMLReader {
 				File XMLFile = new File("src/catastro2.xml");
 				//Obtenemos el xml en un Document DOM para poder poder procesarlo
 				Document DOM = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(XMLFile);
-				//optional, but recommended
-				//read this - http://stackoverflow.com/questions/13786607/normalization-in-dom-parsing-with-java-how-does-it-work
 				//Normalizamos la información para poder mostrarla en organizada
 				DOM.getDocumentElement().normalize();
 				//Imprimimos el elemento raiz del DOM
@@ -26,29 +24,26 @@ public class XMLReader {
 				//Imprimimos la direccion del servidor xmlns
 				System.out.println("Información obtenida de: "+ (provinciasElement.getAttribute("xmlns")));
 				//Numero de control provinciero
-				//Node nodeProvincias = DOM.getElementsByTagName("Provincias").item(0);
-				//Obtenemos los nodos de nombre "prov" en una lista DOM
-				NodeList listNodes = DOM.getElementsByTagName("prov");
+					//Obtenemos el elemento con del Element provincias
+				Element consultaElement = (Element) provinciasElement.getElementsByTagName("consulta_provinciero").item(0);
+				Element controlElement = (Element) consultaElement.getElementsByTagName("control").item(0);
+				System.out.println("Numero de Control de consulta: "+controlElement.getElementsByTagName("cuprov").item(0).getTextContent()); //Imprimimos el numero descrito en el XML
+				//Obtenemos todas las provincias a detallar 
+				Element pronvincieroElement = (Element) consultaElement.getElementsByTagName("provinciero").item(0);
+				NodeList listProvincias = pronvincieroElement.getElementsByTagName("prov");
 				System.out.println("----------------------------");
 				System.out.println("INFORMACIÓN CATASTRO");
 				System.out.println("----------------------------");
 				//Recorremos la lista DOM de nodos nombre ...
-				for (int i = 0; i < listNodes.getLength(); i++) {
+				for (int i = 0; i < listProvincias.getLength(); i++) {
 					//Obtenemos el nodo DOM i-esimo
-					Node iNode = listNodes.item(i);
+					Node iNode = listProvincias.item(i);
 					//Imprimimos el nombre del nodo
-					System.out.println("\nNodo Actual :" + iNode.getNodeName());
-					
+					System.out.println("\n Tipo de nodo actual :" + iNode.getNodeName());
 					if (iNode.getNodeType() == Node.ELEMENT_NODE) {
-						//System.out.println("Adentro");
-						Element eElement = (Element) iNode;
-		
-						/*System.out.println("Staff id : " + eElement.getAttribute("id"));
-						System.out.println("First Name : " + eElement.getElementsByTagName("firstname").item(0).getTextContent());
-						System.out.println("Last Name : " + eElement.getElementsByTagName("lastname").item(0).getTextContent());
-						System.out.println("Nick Name : " + eElement.getElementsByTagName("nickname").item(0).getTextContent());
-						System.out.println("Salary : " + eElement.getElementsByTagName("salary").item(0).getTextContent());
-						*/
+						Element provElement = (Element) iNode;
+						System.out.println("Codigo Postal Provincia : " + provElement.getElementsByTagName("cpine").item(0).getTextContent());
+						System.out.println("Nombre Provincia : " + provElement.getElementsByTagName("np").item(0).getTextContent());
 					}
 				}
 		    } catch (Exception e) {
