@@ -2544,3 +2544,6 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY org.eclipse.wst.server.discovery 1 0 2015-10-08 17:16:34.348
 !MESSAGE cacheFile=file:/Users/daniel/eclipse/jee-latest-released/Eclipse.app/Contents/MacOS/file:/Users/daniel/eclipse/jee-latest-released/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.wst.server.discovery/serverAdapterSitesDetails.xml
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-10-08 20:54:39.825
+!MESSAGE The workspace will exit with unsaved changes in this session.
