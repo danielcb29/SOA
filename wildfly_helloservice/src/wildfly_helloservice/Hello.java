@@ -5,7 +5,7 @@ import javax.jws.WebMethod;
 
 @WebService
 public class Hello {
-	private String message = new String("Hello, ");
+	private String message = new String("Hello, to Service World Mr ");
 	
 	public Hello() {
 		

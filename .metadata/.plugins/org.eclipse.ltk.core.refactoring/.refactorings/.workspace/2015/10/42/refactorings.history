@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;wsdl_test_wsimport&apos; to &apos;java_client_wildfly&apos;" description="Rename resource &apos;wsdl_test_wsimport&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/wsdl_test_wsimport" name="java_client_wildfly" stamp="1444921012215" updateReferences="true"/>
+</session>
