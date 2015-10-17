@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="be15359e-3732-48a7-8458-d15af9d04b71" activeEnvironment="Default" name="calculator_server" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="f48c5caf-0628-4cb2-9645-97c27b1e8aec" wsaVersion="NONE" name="CalculatorServiceSoapBinding" type="wsdl" bindingName="{http://calculator_server/}CalculatorServiceSoapBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8080/calculator_server/Calculator?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:8080/calculator_server/Calculator?wsdl"><con:part><con:url>http://localhost:8080/calculator_server/Calculator?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="CalculatorService" targetNamespace="http://calculator_server/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://calculator_server/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http">
+  <wsdl:types>
+    <xs:schema elementFormDefault="unqualified" targetNamespace="http://calculator_server/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="multiplicar" type="tns:multiplicar"/>
+      <xs:element name="multiplicarResponse" type="tns:multiplicarResponse"/>
+      <xs:element name="restar" type="tns:restar"/>
+      <xs:element name="restarResponse" type="tns:restarResponse"/>
+      <xs:element name="sumar" type="tns:sumar"/>
+      <xs:element name="sumarResponse" type="tns:sumarResponse"/>
+      <xs:complexType name="multiplicar">
+        <xs:sequence>
+          <xs:element name="arg0" type="xs:int"/>
+          <xs:element name="arg1" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="multiplicarResponse">
+        <xs:sequence>
+          <xs:element name="return" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="restar">
+        <xs:sequence>
+          <xs:element name="arg0" type="xs:int"/>
+          <xs:element name="arg1" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="restarResponse">
+        <xs:sequence>
+          <xs:element name="return" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="sumar">
+        <xs:sequence>
+          <xs:element name="arg0" type="xs:int"/>
+          <xs:element name="arg1" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="sumarResponse">
+        <xs:sequence>
+          <xs:element name="return" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="multiplicar">
+    <wsdl:part element="tns:multiplicar" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="restar">
+    <wsdl:part element="tns:restar" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="restarResponse">
+    <wsdl:part element="tns:restarResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="multiplicarResponse">
+    <wsdl:part element="tns:multiplicarResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="sumarResponse">
+    <wsdl:part element="tns:sumarResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="sumar">
+    <wsdl:part element="tns:sumar" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="Calculator">
+    <wsdl:operation name="multiplicar">
+      <wsdl:input message="tns:multiplicar" name="multiplicar"></wsdl:input>
+      <wsdl:output message="tns:multiplicarResponse" name="multiplicarResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="restar">
+      <wsdl:input message="tns:restar" name="restar"></wsdl:input>
+      <wsdl:output message="tns:restarResponse" name="restarResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sumar">
+      <wsdl:input message="tns:sumar" name="sumar"></wsdl:input>
+      <wsdl:output message="tns:sumarResponse" name="sumarResponse"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CalculatorServiceSoapBinding" type="tns:Calculator">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="multiplicar">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="multiplicar">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="multiplicarResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="restar">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="restar">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="restarResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sumar">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="sumar">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="sumarResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CalculatorService">
+    <wsdl:port binding="tns:CalculatorServiceSoapBinding" name="CalculatorPort">
+      <soap:address location="http://localhost:8080/calculator_server/Calculator"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8080/calculator_server/Calculator</con:endpoint></con:endpoints><con:operation id="ea043da7-9cb0-419c-968d-a8155ebc0cd6" isOneWay="false" action="" name="multiplicar" bindingOperationName="multiplicar" type="Request-Response" outputName="multiplicarResponse" inputName="multiplicar" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0697b5a2-f587-43c9-9fb8-f70729a98fc1" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/calculator_server/Calculator</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cal="http://calculator_server/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <cal:multiplicar>
+         <arg0>2</arg0>
+         <arg1>2</arg1>
+      </cal:multiplicar>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://calculator_server/Calculator/multiplicar"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="8de5376c-08a7-482d-a99e-a87d4f9ac8b1" isOneWay="false" action="" name="restar" bindingOperationName="restar" type="Request-Response" outputName="restarResponse" inputName="restar" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9bbc388e-ed8d-4681-8ec6-4af6e40f762c" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/calculator_server/Calculator</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cal="http://calculator_server/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <cal:restar>
+         <arg0>9</arg0>
+         <arg1>11</arg1>
+      </cal:restar>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://calculator_server/Calculator/restar"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="4de34283-0162-42f7-ba71-28a34e906d53" isOneWay="false" action="" name="sumar" bindingOperationName="sumar" type="Request-Response" outputName="sumarResponse" inputName="sumar" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a5fbd8ee-bab9-497d-9ed6-52aeab3241a6" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/calculator_server/Calculator</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cal="http://calculator_server/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <cal:sumar>
+         <arg0>2</arg0>
+         <arg1>4</arg1>
+      </cal:sumar>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://calculator_server/Calculator/sumar"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>

@@ -8,3 +8,21 @@
 
 !ENTRY org.jboss.ide.eclipse.as.core 1 0 2015-10-15 16:57:10.528
 !MESSAGE Module jsp_client_wildfly on WildFly  8.x not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-10-15 17:11:07.394
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-10-15 18:21:55.783
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-10-15 18:22:22.950
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2015-10-15 18:22:23.100
+!MESSAGE Module calculator_server on WildFly  8.x not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2015-10-15 18:57:36.288
+!MESSAGE Module jsp_client_calculator on WildFly  8.x not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-10-15 19:48:41.594
+!MESSAGE Server processes have been terminated.

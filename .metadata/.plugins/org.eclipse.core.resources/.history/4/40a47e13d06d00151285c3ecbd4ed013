@@ -1,5 +1,0 @@
-package wildfly_helloservice;
-
-public class Hello {
-
-}
