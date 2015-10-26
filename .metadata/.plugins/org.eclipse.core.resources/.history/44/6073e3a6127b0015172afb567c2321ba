@@ -1,0 +1,29 @@
+package multas_service;
+
+
+public class Multa {
+	private Vehiculo coche;
+	private Integer valor; 
+	private Propietario infractor;
+	
+	public Multa(Vehiculo paramCoche,Integer paramValor,Propietario paramPropietario){
+		coche = paramCoche;
+		valor = paramValor;
+		infractor = paramPropietario;
+	}
+	public Vehiculo getCoche(){
+		return coche;
+	}
+	
+	public Integer getValor(){
+		return valor;
+	}
+	
+	public void setCoche(Vehiculo coche){
+		this.coche = coche;
+	}
+	
+	public void setValor(Integer valor){
+		this.valor = valor;
+	}
+}

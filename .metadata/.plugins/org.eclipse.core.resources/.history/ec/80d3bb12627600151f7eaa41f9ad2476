@@ -1,0 +1,7 @@
+package com.cdyne.ws.weatherws;
+
+public class WeatherAppClient {
+		private static Weather service = new Weather();
+		private static WeatherSoap port = service.getWeatherSoap();
+		
+}

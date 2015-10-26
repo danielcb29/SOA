@@ -1,0 +1,25 @@
+package com.cdyne.ws.weatherws;
+
+public class WeatherAppClient {
+		private static Weather service = new Weather();
+		private static WeatherSoap port = service.getWeatherSoap();
+		
+		private static void main(String[] args){
+			WeatherReturn wt = getCityWeatherByZIP("30024");
+			System.out.println("TEMPERATURA");
+			System.out.println(wt.getTemperature());
+			
+		}
+		
+		private static ArrayOfWeatherDescription getWeatherInformation(){
+			return port.getWeatherInformation();
+		}
+		
+		private static ForecastReturn getCityForecastByZIP(String zip){
+			return port.getCityForecastByZIP(zip);
+		}
+		
+		private static WeatherReturn getCityWeatherByZIP(String zip){
+			return port.getCityWeatherByZIP(zip);
+		}
+}
