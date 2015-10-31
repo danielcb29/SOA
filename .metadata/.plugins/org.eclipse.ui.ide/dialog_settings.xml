@@ -5,6 +5,9 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/Users/daniel/Documents/UnEx/SOA/Practica2/Evaluacion/wildfly_jaxws_extravalservices"/>
+			<item value="/Users/daniel/Documents/UnEx/SOA/REST/jaxrs_example04_client"/>
+			<item value="/Users/daniel/Documents/UnEx/SOA/REST/jaxrs_example04"/>
 			<item value="/Users/daniel/Documents/UnEx/SOA/Local/Entrega 1 AOS/Ejemplo Api SAX"/>
 			<item value="/Users/daniel/Documents/UnEx/SOA/Local/Actividad01_Lorena/Actividad01"/>
 			<item value="/Users/daniel/Documents/UnEx/SOA/XMLReader"/>

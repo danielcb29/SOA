@@ -5,6 +5,9 @@ import javax.ws.rs.*;
 @Path("/helloworld")
 public class HelloWorldResource {
 
+	public HelloWorldResource(){
+		System.out.println("Creada instancia de HelloWorldResource");
+	}
 	// The Java method will process HTTP GET requests
 	@GET
 	//// The Java method will produce content identified by the MIME Media

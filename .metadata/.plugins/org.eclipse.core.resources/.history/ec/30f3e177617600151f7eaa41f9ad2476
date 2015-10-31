@@ -1,6 +1,0 @@
-package com.cdyne.ws.weatherws;
-
-public class WeatherAppClient {
-		private Weather service; 
-		
-}

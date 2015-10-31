@@ -1,15 +1,32 @@
 package multas_service;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlType;
+
 /**
  * Clase Multa, permite relacionar las demas clases y asignar una fecha y valor a la infraccion 
  * Informacion basica, gets y sets 
  * @author daniel
  *
  */
-
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "Multa", propOrder = {
+    "coche",
+    "valor",
+    "infractor",
+    "mes"
+})
 public class Multa {
+	
+	@XmlElement(required = true)
 	private Vehiculo coche;
+	@XmlElement(required = true)
 	private Integer valor; 
+	@XmlElement(required = true)
 	private Propietario infractor;
+	@XmlElement(required = true)
 	private String mes;
 	
 	public Multa(Vehiculo paramCoche,Integer paramValor,Propietario paramPropietario, String paramMes){

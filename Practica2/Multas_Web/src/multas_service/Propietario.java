@@ -1,12 +1,29 @@
 package multas_service;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlType;
+
 /**
  * Clase Propietario, informacion basica, metodo constructor y gets
  * @author daniel
  *
  */
+
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "Propietario", propOrder = {
+    "nombre",
+    "apellido",
+    "dni"
+})
 public class Propietario {
+	
+	@XmlElement(required = true)
 	private String nombre;
+	@XmlElement(required = true)
 	private String apellido; 
+	@XmlElement(required = true)
 	private String dni; 
 	
 	public Propietario(String paramNombre, String paramApellido, String paramDNI){
