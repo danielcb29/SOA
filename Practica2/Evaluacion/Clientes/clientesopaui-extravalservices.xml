@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="62c89b87-f62b-4250-ab09-43b31153c1eb" activeEnvironment="Default" name="clientesopaui_extravalservices" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="ecaa1e40-6aea-4fa7-9277-f3410d5b3e66" wsaVersion="NONE" name="AOS_Extraval_EstadoAvalesClienteServiceSoapBinding" type="wsdl" bindingName="{http://endpoint.extravalservice/}AOS_Extraval_EstadoAvalesClienteServiceSoapBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8080/wildfly_jaxws_extravalservices/AOS_Extraval_EstadoAvalesCliente?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:8080/wildfly_jaxws_extravalservices/AOS_Extraval_EstadoAvalesCliente?wsdl"><con:part><con:url>http://localhost:8080/wildfly_jaxws_extravalservices/AOS_Extraval_EstadoAvalesCliente?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="AOS_Extraval_EstadoAvalesClienteService" targetNamespace="http://endpoint.extravalservice/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://endpoint.extravalservice/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http">
+  <wsdl:types>
+    <xs:schema elementFormDefault="unqualified" targetNamespace="http://endpoint.extravalservice/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="solicitud">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="idAval" type="xs:int"/>
+            <xs:element name="idSolicitante" type="xs:int"/>
+            <xs:element name="estado" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="solicitudAvalesDeUnCliente" type="tns:solicitudAvalesDeUnCliente"/>
+      <xs:element name="solicitudAvalesDeUnClienteResponse" type="tns:solicitudAvalesDeUnClienteResponse"/>
+      <xs:complexType name="solicitudAvalesDeUnCliente">
+        <xs:sequence>
+          <xs:element name="arg0" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="solicitudAvalesDeUnClienteResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="solicitudAvales" type="tns:ArrayOfSolicitud"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOfSolicitud">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="Solicitud" nillable="true">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="idAval" type="xs:int"/>
+                <xs:element name="idSolicitante" type="xs:int"/>
+                <xs:element name="estado" type="xs:string"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="solicitudAvalesDeUnClienteResponse">
+    <wsdl:part element="tns:solicitudAvalesDeUnClienteResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="solicitudAvalesDeUnCliente">
+    <wsdl:part element="tns:solicitudAvalesDeUnCliente" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="AOS_Extraval_EstadoAvalesCliente">
+    <wsdl:operation name="solicitudAvalesDeUnCliente">
+      <wsdl:input message="tns:solicitudAvalesDeUnCliente" name="solicitudAvalesDeUnCliente"></wsdl:input>
+      <wsdl:output message="tns:solicitudAvalesDeUnClienteResponse" name="solicitudAvalesDeUnClienteResponse"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AOS_Extraval_EstadoAvalesClienteServiceSoapBinding" type="tns:AOS_Extraval_EstadoAvalesCliente">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="solicitudAvalesDeUnCliente">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="solicitudAvalesDeUnCliente">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="solicitudAvalesDeUnClienteResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AOS_Extraval_EstadoAvalesClienteService">
+    <wsdl:port binding="tns:AOS_Extraval_EstadoAvalesClienteServiceSoapBinding" name="AOS_Extraval_EstadoAvalesClientePort">
+      <soap:address location="http://localhost:8080/wildfly_jaxws_extravalservices/AOS_Extraval_EstadoAvalesCliente"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8080/wildfly_jaxws_extravalservices/AOS_Extraval_EstadoAvalesCliente</con:endpoint></con:endpoints><con:operation id="dd680620-8024-47f2-a7b9-8df5d487c0d1" isOneWay="false" action="" name="solicitudAvalesDeUnCliente" bindingOperationName="solicitudAvalesDeUnCliente" type="Request-Response" outputName="solicitudAvalesDeUnClienteResponse" inputName="solicitudAvalesDeUnCliente" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8697f8ec-c4da-4ab3-87d9-bb9ecc3d5e4e" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/wildfly_jaxws_extravalservices/AOS_Extraval_EstadoAvalesCliente</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:end="http://endpoint.extravalservice/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <end:solicitudAvalesDeUnCliente>
+         <arg0>29</arg0>
+      </end:solicitudAvalesDeUnCliente>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.extravalservice/AOS_Extraval_EstadoAvalesCliente/solicitudAvalesDeUnCliente"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="ceb1986b-68bf-4be7-8721-cd24b36e6991" wsaVersion="NONE" name="AOS_Extraval_AprovacionAvalClienteServiceSoapBinding" type="wsdl" bindingName="{http://endpoint.extravalservice/}AOS_Extraval_AprovacionAvalClienteServiceSoapBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8080/wildfly_jaxws_extravalservices/AOS_Extraval_AprovacionAvalCliente?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:8080/wildfly_jaxws_extravalservices/AOS_Extraval_AprovacionAvalCliente?wsdl"><con:part><con:url>http://localhost:8080/wildfly_jaxws_extravalservices/AOS_Extraval_AprovacionAvalCliente?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="AOS_Extraval_AprovacionAvalClienteService" targetNamespace="http://endpoint.extravalservice/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://endpoint.extravalservice/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http">
+  <wsdl:types>
+    <xs:schema elementFormDefault="unqualified" targetNamespace="http://endpoint.extravalservice/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="cambiarEstadoAvalDeUnCliente" type="tns:cambiarEstadoAvalDeUnCliente"/>
+      <xs:element name="cambiarEstadoAvalDeUnClienteResponse" type="tns:cambiarEstadoAvalDeUnClienteResponse"/>
+      <xs:element name="solicitud">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="idAval" type="xs:int"/>
+            <xs:element name="idSolicitante" type="xs:int"/>
+            <xs:element name="estado" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:complexType name="cambiarEstadoAvalDeUnCliente">
+        <xs:sequence>
+          <xs:element name="arg0" type="xs:int"/>
+          <xs:element name="arg1" type="xs:int"/>
+          <xs:element minOccurs="0" name="arg2" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="cambiarEstadoAvalDeUnClienteResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="solicitudAvalACambiar">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="idAval" type="xs:int"/>
+                <xs:element name="idSolicitante" type="xs:int"/>
+                <xs:element name="estado" type="xs:string"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="cambiarEstadoAvalDeUnClienteResponse">
+    <wsdl:part element="tns:cambiarEstadoAvalDeUnClienteResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="cambiarEstadoAvalDeUnCliente">
+    <wsdl:part element="tns:cambiarEstadoAvalDeUnCliente" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="AOS_Extraval_AprovacionAvalCliente">
+    <wsdl:operation name="cambiarEstadoAvalDeUnCliente">
+      <wsdl:input message="tns:cambiarEstadoAvalDeUnCliente" name="cambiarEstadoAvalDeUnCliente"></wsdl:input>
+      <wsdl:output message="tns:cambiarEstadoAvalDeUnClienteResponse" name="cambiarEstadoAvalDeUnClienteResponse"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AOS_Extraval_AprovacionAvalClienteServiceSoapBinding" type="tns:AOS_Extraval_AprovacionAvalCliente">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="cambiarEstadoAvalDeUnCliente">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="cambiarEstadoAvalDeUnCliente">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="cambiarEstadoAvalDeUnClienteResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AOS_Extraval_AprovacionAvalClienteService">
+    <wsdl:port binding="tns:AOS_Extraval_AprovacionAvalClienteServiceSoapBinding" name="AOS_Extraval_AprovacionAvalClientePort">
+      <soap:address location="http://localhost:8080/wildfly_jaxws_extravalservices/AOS_Extraval_AprovacionAvalCliente"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8080/wildfly_jaxws_extravalservices/AOS_Extraval_AprovacionAvalCliente</con:endpoint></con:endpoints><con:operation id="5526545b-2bdd-4247-8d1e-b6b7b2996de1" isOneWay="false" action="" name="cambiarEstadoAvalDeUnCliente" bindingOperationName="cambiarEstadoAvalDeUnCliente" type="Request-Response" outputName="cambiarEstadoAvalDeUnClienteResponse" inputName="cambiarEstadoAvalDeUnCliente" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f601561b-1729-4f05-b594-27041853b1ba" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/wildfly_jaxws_extravalservices/AOS_Extraval_AprovacionAvalCliente</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:end="http://endpoint.extravalservice/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <end:cambiarEstadoAvalDeUnCliente>
+         <arg0>29</arg0>
+         <arg1>1</arg1>
+         <!--Optional:-->
+         <arg2>aceptado</arg2>
+      </end:cambiarEstadoAvalDeUnCliente>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.extravalservice/AOS_Extraval_AprovacionAvalCliente/cambiarEstadoAvalDeUnCliente"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="6cec220f-8c3e-4286-abd2-a64e418af8e7" wsaVersion="NONE" name="AOS_Extraval_FormalizarReciboParticipacionesSocioServiceSoapBinding" type="wsdl" bindingName="{http://endpoint.extravalservice/}AOS_Extraval_FormalizarReciboParticipacionesSocioServiceSoapBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8080/wildfly_jaxws_extravalservices/AOS_Extraval_FormalizarReciboParticipacionesSocio?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:8080/wildfly_jaxws_extravalservices/AOS_Extraval_FormalizarReciboParticipacionesSocio?wsdl"><con:part><con:url>http://localhost:8080/wildfly_jaxws_extravalservices/AOS_Extraval_FormalizarReciboParticipacionesSocio?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="AOS_Extraval_FormalizarReciboParticipacionesSocioService" targetNamespace="http://endpoint.extravalservice/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://endpoint.extravalservice/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http">
+  <wsdl:types>
+    <xs:schema elementFormDefault="unqualified" targetNamespace="http://endpoint.extravalservice/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="getReciboParticipacionesSocio" type="tns:getReciboParticipacionesSocio"/>
+      <xs:element name="getReciboParticipacionesSocioResponse" type="tns:getReciboParticipacionesSocioResponse"/>
+      <xs:element name="recibo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="idSocio" type="xs:string"/>
+            <xs:element name="numeroParticipaciones" type="xs:int"/>
+            <xs:element name="idRecivo" type="xs:string"/>
+            <xs:element name="importe" type="xs:string"/>
+            <xs:element name="estado" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:complexType name="getReciboParticipacionesSocio">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+          <xs:element name="arg1" type="xs:int"/>
+          <xs:element minOccurs="0" name="arg2" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getReciboParticipacionesSocioResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="idSocio" type="xs:string"/>
+                <xs:element name="numeroParticipaciones" type="xs:int"/>
+                <xs:element name="idRecivo" type="xs:string"/>
+                <xs:element name="importe" type="xs:string"/>
+                <xs:element name="estado" type="xs:string"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getReciboParticipacionesSocioResponse">
+    <wsdl:part element="tns:getReciboParticipacionesSocioResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getReciboParticipacionesSocio">
+    <wsdl:part element="tns:getReciboParticipacionesSocio" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="AOS_Extraval_FormalizarReciboParticipacionesSocio">
+    <wsdl:operation name="getReciboParticipacionesSocio">
+      <wsdl:input message="tns:getReciboParticipacionesSocio" name="getReciboParticipacionesSocio"></wsdl:input>
+      <wsdl:output message="tns:getReciboParticipacionesSocioResponse" name="getReciboParticipacionesSocioResponse"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AOS_Extraval_FormalizarReciboParticipacionesSocioServiceSoapBinding" type="tns:AOS_Extraval_FormalizarReciboParticipacionesSocio">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getReciboParticipacionesSocio">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getReciboParticipacionesSocio">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getReciboParticipacionesSocioResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AOS_Extraval_FormalizarReciboParticipacionesSocioService">
+    <wsdl:port binding="tns:AOS_Extraval_FormalizarReciboParticipacionesSocioServiceSoapBinding" name="AOS_Extraval_FormalizarReciboParticipacionesSocioPort">
+      <soap:address location="http://localhost:8080/wildfly_jaxws_extravalservices/AOS_Extraval_FormalizarReciboParticipacionesSocio"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8080/wildfly_jaxws_extravalservices/AOS_Extraval_FormalizarReciboParticipacionesSocio</con:endpoint></con:endpoints><con:operation id="8ea03dfe-d22c-4084-8b06-8bb7a92ef239" isOneWay="false" action="" name="getReciboParticipacionesSocio" bindingOperationName="getReciboParticipacionesSocio" type="Request-Response" outputName="getReciboParticipacionesSocioResponse" inputName="getReciboParticipacionesSocio" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="174879b8-65d7-4ec1-bd14-cc92fca9f325" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/wildfly_jaxws_extravalservices/AOS_Extraval_FormalizarReciboParticipacionesSocio</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:end="http://endpoint.extravalservice/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <end:getReciboParticipacionesSocio>
+         <!--Optional:-->
+         <arg0>29</arg0>
+         <arg1>5000</arg1>
+         <!--Optional:-->
+         <arg2>3</arg2>
+      </end:getReciboParticipacionesSocio>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://endpoint.extravalservice/AOS_Extraval_FormalizarReciboParticipacionesSocio/getReciboParticipacionesSocio"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy xmlns="http://www.apache.org/ode/schemas/dd/2007/03" xmlns:es.unex.aos.hello1="http://es.unex.aos.hello1">
+  <process name="es.unex.aos.hello1:hello1">
+    <active>true</active>
+    <retired>false</retired>
+    <process-events generate="all"/>
+    <provide partnerLink="client">
+      <service name="es.unex.aos.hello1:hello1Service" port="hello1Port"/>
+    </provide>
+  </process>
+</deploy>
