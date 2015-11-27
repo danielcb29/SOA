@@ -291,3 +291,121 @@
 
 !ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2015-10-31 18:41:48.086
 !MESSAGE Server Shutdown Succeeded
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 8 1644298244 2015-11-27 10:54:18.359
+!MESSAGE Full publish failed for module jsp_client_wildfly
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 8 0 2015-11-27 10:54:18.360
+!MESSAGE Publish Canceled
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-11-27 10:58:20.321
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-11-27 10:58:54.022
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-11-27 11:07:15.979
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-11-27 11:16:25.731
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-11-27 11:16:47.195
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-11-27 11:18:19.515
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-11-27 11:18:39.952
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-11-27 11:19:23.170
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2015-11-27 11:19:23.233
+!MESSAGE Module multas_web_sca_imp on WildFly  8.x not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2015-11-27 11:19:43.368
+!MESSAGE Module multas_web_sca_imp on WildFly  8.x still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-11-27 11:21:46.814
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-11-27 11:55:20.596
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-11-27 11:55:40.641
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2015-11-27 11:55:40.766
+!MESSAGE Module sca_webimplementation on WildFly  8.x not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298246 2015-11-27 14:50:24.801
+!MESSAGE Unable to delete module
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-11-27 14:50:24.801
+!MESSAGE Could not delete /Users/daniel/Documents/UnEx/SOA/wildfly-8.2.1.Final/standalone/deployments/multas_web_sca_imp.war. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298246 2015-11-27 14:50:51.934
+!MESSAGE Unable to delete module
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-11-27 14:50:51.934
+!MESSAGE Could not delete /Users/daniel/Documents/UnEx/SOA/wildfly-8.2.1.Final/standalone/deployments/multas_web_sca_imp.war. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-11-27 14:52:06.984
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298246 2015-11-27 14:52:24.847
+!MESSAGE Unable to delete module
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-11-27 14:52:24.847
+!MESSAGE Could not delete /Users/daniel/Documents/UnEx/SOA/wildfly-8.2.1.Final/standalone/deployments/multas_web_sca_imp.war. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-11-27 14:52:25.215
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-11-27 14:52:58.640
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298246 2015-11-27 14:57:52.708
+!MESSAGE Unable to delete module
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-11-27 14:57:52.708
+!MESSAGE Could not delete /Users/daniel/Documents/UnEx/SOA/wildfly-8.2.1.Final/standalone/deployments/multas_web_sca_imp.war. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-11-27 14:57:55.581
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298246 2015-11-27 14:58:11.282
+!MESSAGE Unable to delete module
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-11-27 14:58:11.282
+!MESSAGE Could not delete /Users/daniel/Documents/UnEx/SOA/wildfly-8.2.1.Final/standalone/deployments/multas_web_sca_imp.war. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-11-27 14:58:11.512
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-11-27 14:58:25.280
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298246 2015-11-27 14:59:24.984
+!MESSAGE Unable to delete module
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-11-27 14:59:24.985
+!MESSAGE Could not delete /Users/daniel/Documents/UnEx/SOA/wildfly-8.2.1.Final/standalone/deployments/multas_web_sca_imp.war. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298246 2015-11-27 14:59:26.167
+!MESSAGE Unable to delete module
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-11-27 14:59:26.167
+!MESSAGE Could not delete /Users/daniel/Documents/UnEx/SOA/wildfly-8.2.1.Final/standalone/deployments/multas_web_sca_imp.war. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-11-27 15:54:33.515
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298246 2015-11-27 16:07:51.688
+!MESSAGE Unable to delete module
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-11-27 16:07:51.688
+!MESSAGE Could not delete /Users/daniel/Documents/UnEx/SOA/wildfly-8.2.1.Final/standalone/deployments/multas_web_sca_imp.war. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-11-27 16:07:55.830
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-11-27 16:08:51.437
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-11-27 16:12:54.839
+!MESSAGE Server processes have been terminated.

@@ -1,0 +1,16 @@
+package api;
+
+import java.util.ArrayList;
+
+import javax.jws.WebParam;
+import javax.xml.ws.Holder;
+
+import multas_service.Propietario;
+import multas_service.Vehiculo;
+
+public interface ServiciosMulta {
+	public boolean consultaMulta(String placa);
+	public Propietario propietarioMulta(String mes,String placa);
+	public ArrayList<Integer> consultaMultaMeses(ArrayList<String> meses,String placa);
+	public void detalleMulta(String dni , String mes, @WebParam(mode=WebParam.Mode.OUT) Holder<Integer> valor, @WebParam(mode=WebParam.Mode.OUT) Holder<Propietario> prop, @WebParam(mode=WebParam.Mode.OUT) Holder<Vehiculo> vehi);
+}

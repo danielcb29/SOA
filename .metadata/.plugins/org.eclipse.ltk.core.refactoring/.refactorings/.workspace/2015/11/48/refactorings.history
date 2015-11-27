@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;multas_web_sca_imp&apos;" deleteContents="true" description="Delete resource &apos;multas_web_sca_imp&apos;" element1="/multas_web_sca_imp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1448621817636"/>
+</session>

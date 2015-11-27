@@ -1,0 +1,48 @@
+package es.gloin.cloudtest.servlet;
+
+import com.mongodb.Mongo;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.mongodb.MongoDbFactory;
+import org.springframework.data.mongodb.core.MongoFactoryBean;
+import org.springframework.data.mongodb.core.SimpleMongoDbFactory;
+
+/**
+ * Created by jmiranda on 26/11/15.
+ */
+@Configuration
+public class AppConfig {
+
+    public final static String MONGODB_DATABASE_NAME = "cloudtest";
+
+    /*
+     * Factory bean that creates the com.mongodb.Mongo instance
+     */
+    public @Bean
+    MongoFactoryBean mongo() {
+        MongoFactoryBean mongo = new MongoFactoryBean();
+
+        String host = System.getenv("OPENSHIFT_MONGODB_DB_HOST");
+        if (host == null) host = "localhost";
+        mongo.setHost(host);
+
+        String port = System.getenv("OPENSHIFT_MONGODB_DB_PORT");
+        if (port == null) port = "27017";
+        mongo.setPort(Integer.parseInt(port));
+
+        return mongo;
+    }
+
+    public @Bean
+    MongoDbFactory mongoDbFactory() throws Exception {
+        Mongo mongo = mongo().getObject();
+        Logger logger = LoggerFactory.getLogger(AppConfig.class);
+        logger.debug("Mongo.ConnectPoint = " + mongo.getConnectPoint());
+        System.out.println("Mongo.ConnectPoint = " + mongo.getConnectPoint());
+        return new SimpleMongoDbFactory(mongo, MONGODB_DATABASE_NAME);
+    }
+
+}
+
