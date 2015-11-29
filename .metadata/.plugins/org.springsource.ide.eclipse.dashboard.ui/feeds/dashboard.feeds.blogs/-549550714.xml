@@ -5,7 +5,34 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2015-11-25T15:16:00Z</updated>
+  <updated>2015-11-27T12:37:50Z</updated>
+  <entry>
+    <title>Spring Tool Suite 3.7.2 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/11/27/spring-tool-suite-3-7-2-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Martin Lippert</name>
+    </author>
+    <id>tag:spring.io,2015-11-27:2310</id>
+    <updated>2015-11-27T12:37:50Z</updated>
+    <content type="html">&lt;p&gt;Dear Spring Community,&lt;/p&gt;
+&lt;p&gt;I am happy to announce the 3.7.2 release of the Spring Tool Suite, our Eclipse-based tooling.&lt;/p&gt;
+&lt;p&gt;STS 3.7.2 focuses on fixing existing issues and updating STS to work with the latest updates on Cloud Foundry, Spring, and the various Spring projects.&lt;/p&gt;
+&lt;p&gt;The list of fixed issues include:&lt;/p&gt;
+&lt;ul&gt;&#xD;
+&lt;li&gt;Spring Boot Dashboard now works with the new Diego runtime on Cloud Foundry&lt;/li&gt;&#xD;
+&lt;li&gt;Spring Boot 1.3.0 compatibility (due to updated spring components inside)&lt;/li&gt;&#xD;
+&lt;li&gt;quick text search can now search for escaped * and ? characters&lt;/li&gt;&#xD;
+&lt;li&gt;preliminary support for Eclipse Buildship (the new Gradle integration for Eclipse from Gradleware)&lt;/li&gt;&#xD;
+&lt;/ul&gt;
+&lt;p&gt;To download the distributions, please go visit:&lt;/p&gt;
+&lt;ul&gt;&#xD;
+&lt;li&gt;Spring Tool Suite: &lt;a href="https://spring.io/tools/sts/all"&gt;https://spring.io/tools/sts/all&lt;/a&gt;&lt;/li&gt;&#xD;
+&lt;/ul&gt;
+&lt;p&gt;Detailed new and noteworthy notes can be found here: &lt;a href="http://docs.spring.io/sts/nan/v372/NewAndNoteworthy.html"&gt;STS 3.7.2 New &amp;amp; Noteworthy&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;STS 3.7.3 is scheduled to ship in early March 2016.&lt;/p&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>News for Spring Data JDBC Extensions Project</title>
     <link rel="alternate" href="https://spring.io/blog/2015/11/25/news-for-spring-data-jdbc-extensions-project" />
@@ -1387,31 +1414,5 @@ You updated the UI to show an employee&amp;#8217;s manager and also display erro
 &lt;/div&gt;&#xD;
 &lt;/div&gt;&#xD;
 &lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring (JavaOne 2015 Edition) - October 27, 2015</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/10/28/this-week-in-spring-javaone-2015-edition-october-27-2015" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2015-10-28:2287</id>
-    <updated>2015-10-28T00:46:11Z</updated>
-    <content type="html">&lt;p&gt;Welcome to another installation of &lt;em&gt;This Week in Spring&lt;/em&gt;! This week I&amp;rsquo;m at JavaOne 2015 in San Francisco along with the rest of the Pivotal team. This week the Pivotal Spring team is out in full force, come stop by and say hi!&lt;/p&gt;
-&lt;p&gt;There are some great new SpringOne2GX 2015 recordings on line as well as some great community content this week so let&amp;rsquo;s get to it!&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring Cloud cofounder&amp;rsquo;s &lt;a href="http://spring.io/blog/2015/10/22/springone2gx-2015-replay-developer-experience-with-spring-cloud"&gt;Spencer Gibb and Dr. David Syer&amp;rsquo;s talk&lt;/a&gt; on the Spring Cloud Developer experience from SpringOne2GX 2015!&lt;/li&gt;
-  &lt;li&gt;Spring tools ninja Martin Lippert &lt;a href="http://spring.io/blog/2015/10/22/the-spring-boot-dashboard-in-sts-part-3-spring-boot-devtools-reloaded"&gt;continues his series with this third installment on using Spring Boot Dashboard in STS&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Gary Russell has just announced a few &lt;a href="uhttp://spring.io/blog/2015/10/27/spring-integration-maintenance-releases-available"&gt;new maintenance releases of Spring Integration&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Check out this upcoming IntelliJ IDEA webinar on the &lt;a href="http://info.jetbrains.com/IDEA-Webinar-November2015-registration.html"&gt;new Spring framework and Spring Boot support in IntelliJ IDEA with Spring ninja Stéphane Nicoll&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;this post by Rajith Delantha walks through &lt;a href="http://www.javacodegeeks.com/2015/10/spring-boot-oauth2-security.html"&gt;using Spring Security OAuth with Spring Boot&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;My article on the &lt;a href="https://dzone.com/articles/the-power-patterns-and-pains-of-microservices"&gt;The Power, Patterns, and Pains of Microservices of microservices is now up on DZone&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Giau Ngo has a good example mapping on using JPA many-to-many relationship mapping &lt;a href="http://hellokoding.com/jpa-many-to-many-relationship-mapping-example-with-spring-boot-maven-and-mysql/"&gt;with Spring Boot, MySQL and Maven&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Papo Reto has a nice in Portguese-language video - I&amp;rsquo;m pretty sure - &lt;a href="https://www.youtube.com/watch?v=ROw92pLEYmA"&gt;on using Spring Boot on Heroku&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Dan Vega&amp;rsquo;s got a really cool look at using &lt;a href="http://therealdanvega.com/blog/2015/10/23/spring-boot-application-annotation"&gt;the &lt;code&gt;@SpringBootApplication&lt;/code&gt; on annotation&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Do you &lt;a href="http://docs.stormpath.com/java/spring-boot-web/quickstart.html"&gt;want to get Stormpath working with Spring Boot&lt;/a&gt;? Check out this handy getting-started example!&lt;/li&gt;
-  &lt;li&gt;I thought this was a cool &lt;a href="http://www.haydonryan.com/category/cloudfoundry/"&gt;blog on using Cloud Watch with Cloud Foundry&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Roberto Venanzi of &lt;em&gt;The Spring Side blog&lt;/em&gt; has an interesting Italian-language post on &lt;a href="http://www.thespringside.com/?p=19"&gt;using Spring Boot with JSF&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content>
   </entry>
 </feed>

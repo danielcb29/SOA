@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;example&apos; to &apos;helloworld&apos;&#x0A;- Original project: &apos;stomp-example&apos;&#x0A;- Original element: &apos;stomp-example/src/main/java/example&apos;&#x0A;- Renamed element: &apos;stomp-example/src/main/java/helloworld&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;example&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;example" name="helloworld" qualified="false" references="true" stamp="1448729331324" textual="false" version="1.0"/>
+</session>

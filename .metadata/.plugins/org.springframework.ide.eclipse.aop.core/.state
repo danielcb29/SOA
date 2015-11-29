@@ -1,5 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aop-reference-model>
-<aop-project name="spring_jms_test"/>
-<aop-project name="cloudapp"/>
-</aop-reference-model>
+<aop-reference-model/>

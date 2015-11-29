@@ -13,4 +13,8 @@
 <fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlAccessType"/>
 <fullyQualifiedTypeName name="javax.crypto.SealedObject"/>
 <fullyQualifiedTypeName name="javax.xml.ws.Holder"/>
+<fullyQualifiedTypeName name="api.ServiciosMulta"/>
+<fullyQualifiedTypeName name="api.PropietarioMulta"/>
+<fullyQualifiedTypeName name="api.DetalleMulta"/>
+<fullyQualifiedTypeName name="api.ConsultaMulta"/>
 </qualifiedTypeNameHistroy>

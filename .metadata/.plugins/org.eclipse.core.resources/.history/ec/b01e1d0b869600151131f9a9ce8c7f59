@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" import="lib.*"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Cliente web para multas web</title>
+</head>
+<body>
+<h2>Multas Web</h2>
+ <%
+ 	Boolean resultConsultaM = false;
+ 	String resultPropietarioM = "";
+ 	try{
+ 		ConsultaMultaImpService serviceConsulta=new ConsultaMultaImpService();
+ 		ConsultaMultaImp portConsulta = serviceConsulta.getConsultaMultaImpPort();
+ 		resultConsultaM = portConsulta.consultaMulta("ZNL538");
+ 		//resultPropietarioM = 
+ 		//out.println(port.consultaMulta("ZNL538"));
+ 	}catch (Exception e){
+ 		e.printStackTrace();
+ 	}
+ %>
+ <p>A continuación se presentan los resultados de las consultas realizadas mediante web service por este cliente web</p>
+ <h3>Consulta Multa:</h3>
+ <b>Entrada:</b> ZNL538 <br/>
+ <b>Resultado:</b> <%= resultConsultaM %>
+ 
+ <h3>Propietario Multa</h3>
+ <b>Entrada:</b>  <br/>
+ <b>Resultado:</b> <%=  %>
+ 
+ <h3>Detalle Multa</h3>
+ <b>Entrada:</b>  <br/>
+ <b>Resultado:</b> <%=  %>
+ 
+</body>
+</html>
