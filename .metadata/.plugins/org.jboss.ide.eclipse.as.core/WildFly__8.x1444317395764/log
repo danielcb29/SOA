@@ -427,3 +427,19 @@
 
 !ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-11-29 11:48:02.573
 !MESSAGE Server processes have been terminated.
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-11-30 20:56:14.137
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2015-11-30 20:56:41.342
+!MESSAGE Module sca_webclient on WildFly  8.x not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-11-30 20:56:41.445
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2015-11-30 20:57:01.621
+!MESSAGE Module sca_webclient on WildFly  8.x still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-11-30 21:07:00.904
+!MESSAGE Server processes have been terminated.

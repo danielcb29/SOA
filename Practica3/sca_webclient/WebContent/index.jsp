@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="lib.*"%>
+    pageEncoding="UTF-8" import="api.*"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -13,15 +13,11 @@
  	String resultPropietarioM = "";
  	String resultDetalleM = "";
  	try{
- 		ConsultaMultaImpService serviceConsulta=new ConsultaMultaImpService();
- 		PropietarioMultaImpService servicePropietario = new PropietarioMultaImpService();
- 		DetalleMultaImpService serviceDetalle = new DetalleMultaImpService();
- 		ConsultaMultaImp portConsulta = serviceConsulta.getConsultaMultaImpPort();
- 		PropietarioMultaImp portPropietario = servicePropietario.getPropietarioMultaImpPort();
- 		DetalleMultaImp portDetalle = serviceDetalle.getDetalleMultaImpPort();
- 		resultConsultaM = portConsulta.consultaMulta("ZNL538");
- 		resultPropietarioM = portPropietario.propietarioMulta("Mayo", "CFN150"); 
- 		resultDetalleM = portDetalle.detalleMulta("1144340675", "Abril");
+ 		MultasServiceService serviceMultas = new MultasServiceService();
+ 		MultasService portMultas = serviceMultas.getMultasServicePort();
+ 		resultConsultaM = portMultas.consultaMulta("ZNL538");
+ 		resultPropietarioM = portMultas.propietarioMulta("Mayo", "CFN150"); 
+ 		resultDetalleM = portMultas.detalleMulta("1144340675", "Abril");
  	}catch (Exception e){
  		e.printStackTrace();
  	}

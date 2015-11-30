@@ -1761,3 +1761,11 @@ org.eclipse.jface.text.BadLocationException: null
 	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+2015-11-29 11:53:46,903 [Worker-30] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: helloworld:apollo-stomp-helloworld:0.1-SNAPSHOT @ /Users/daniel/Documents/UnEx/Proyecto_SOA/JMS_Project_AOS/HelloWorld/java/pom.xml.
+2015-11-29 11:53:48,282 [Worker-30] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /apollo-stomp-helloworld/src/main/java
+2015-11-29 11:53:48,282 [Worker-30] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /apollo-stomp-helloworld/src/test/java
+2015-11-29 11:53:48,549 [Worker-30] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 4 sec
+2015-11-29 11:53:49,933 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-11-29 11:53:49,935 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/daniel/Documents/UnEx/Proyecto_SOA/JMS_Project_AOS/HelloWorld/java/src/main/resources
+2015-11-29 11:53:49,937 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-11-29 11:53:49,938 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/daniel/Documents/UnEx/Proyecto_SOA/JMS_Project_AOS/HelloWorld/java/src/test/resources

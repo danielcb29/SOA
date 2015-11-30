@@ -14,6 +14,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/Users/daniel/Documents/UnEx/Proyecto_SOA/JMS_Project_AOS/HelloWorld/java"/>
 			<item value="/Users/daniel/Documents/UnEx/SOA/Proyecto/JMS_Project_AOS/HelloWorld/java"/>
 		</list>
 		<list key="projectNameTemplate">
