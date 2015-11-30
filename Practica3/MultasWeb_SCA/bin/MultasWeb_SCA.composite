@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmlns:sawsdl="http://www.w3.org/ns/sawsdl" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:tuscany="http://tuscany.apache.org/xmlns/sca/1.0" name="MultasWeb_SCA" targetNamespace="http://eclipse.org/MultasWeb_SCA/src/MultasWeb_SCA">
+  <sca:component name="MultasWebComponent">
+    <sca:implementation.java class="lib.MultasServiceImp"/>
+    <sca:service name="MultasService">
+      <sca:interface.java interface="api.MultasService"/>
+    </sca:service>
+    <sca:property name="nombreVentana"/>
+    <sca:reference name="consultaService"/>
+    <sca:reference name="detalleService"/>
+    <sca:reference name="propietarioService"/>
+  </sca:component>
+  <sca:component name="ConsultaMultaComponent">
+    <sca:implementation.java class="lib.ConsultaMultaImp"/>
+    <sca:service name="ConsultaMulta">
+      <sca:interface.java interface="api.ConsultaMulta"/>
+    </sca:service>
+  </sca:component>
+  <sca:component name="DetalleMultaComponent">
+    <sca:implementation.java class="lib.DetalleMultaImp"/>
+    <sca:service name="DetalleMulta">
+      <sca:interface.java interface="api.DetalleMulta"/>
+      <sawsdl:semantic.sawsdl/>
+    </sca:service>
+  </sca:component>
+  <sca:component name="PropietarioMultaComponent">
+    <sca:implementation.java class="lib.PropietarioMultaImp"/>
+    <sca:service name="PropietarioMulta">
+      <sca:interface.java interface="api.PropietarioMulta"/>
+    </sca:service>
+  </sca:component>
+  <sca:wire source="MultasWebComponent/consultaService" target="ConsultaMultaComponent/ConsultaMulta"/>
+  <sca:wire source="MultasWebComponent/detalleService" target="DetalleMultaComponent/DetalleMulta"/>
+  <sca:wire source="MultasWebComponent/propietarioService" target="PropietarioMultaComponent/PropietarioMulta"/>
+  <sca:service name="MultasWebService" promote="MultasWebComponent/MultasService">
+    <tuscany:binding.rmi serviceName="multasWebRMIService"/>
+    <sca:binding.ws/>
+  </sca:service>
+</sca:composite>

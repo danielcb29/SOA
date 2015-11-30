@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:tuscany="http://tuscany.apache.org/xmlns/sca/1.0" xmi:id="_1TLbgJeGEeWRPOHx9angRQ" type="Sca" name="MultasWeb_SCA.composite_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_1U7vAJeGEeWRPOHx9angRQ" type="2001">
+    <children xmi:type="notation:Node" xmi:id="_1U89IJeGEeWRPOHx9angRQ" type="5008"/>
+    <children xmi:type="notation:Node" xmi:id="_1U9kMJeGEeWRPOHx9angRQ" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_odqsMJeHEeWRPOHx9angRQ" type="3001">
+        <children xmi:type="notation:Node" xmi:id="_odr6UJeHEeWRPOHx9angRQ" type="5001"/>
+        <children xmi:type="notation:Node" xmi:id="_odshYJeHEeWRPOHx9angRQ" type="7005">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_odshYZeHEeWRPOHx9angRQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_odshYpeHEeWRPOHx9angRQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_odtvgJeHEeWRPOHx9angRQ" type="7006">
+          <children xmi:type="notation:Node" xmi:id="_szDYEJeHEeWRPOHx9angRQ" type="org.eclipse.stp.sca.diagram.tuscany.RMIBinding">
+            <styles xmi:type="notation:DiagramStyle" xmi:id="_szDYEZeHEeWRPOHx9angRQ"/>
+            <element xmi:type="tuscany:RMIBinding" href="MultasWeb_SCA.composite#//@composite/@service.0/@bindingGroup.0"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_szDYEpeHEeWRPOHx9angRQ"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vwn8cJeHEeWRPOHx9angRQ" type="3005">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_vwn8cZeHEeWRPOHx9angRQ" fontName="Ubuntu"/>
+            <element xmi:type="sca:WebServiceBinding" href="MultasWeb_SCA.composite#//@composite/@service.0/@bindingGroup.1"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vwn8cpeHEeWRPOHx9angRQ"/>
+          </children>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_odtvgZeHEeWRPOHx9angRQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_odtvgpeHEeWRPOHx9angRQ"/>
+        </children>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_odqsMZeHEeWRPOHx9angRQ" fontName="Ubuntu"/>
+        <element xmi:type="sca:Service" href="MultasWeb_SCA.composite#//@composite/@service.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_odqsMpeHEeWRPOHx9angRQ"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_1U9kMZeGEeWRPOHx9angRQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_1U9kMpeGEeWRPOHx9angRQ"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_1U-LQJeGEeWRPOHx9angRQ" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_1U-LQZeGEeWRPOHx9angRQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_1U-LQpeGEeWRPOHx9angRQ"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_1U-yUJeGEeWRPOHx9angRQ" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_1U-yUZeGEeWRPOHx9angRQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_1U-yUpeGEeWRPOHx9angRQ"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_1U_ZYJeGEeWRPOHx9angRQ" type="7004">
+      <children xmi:type="notation:Node" xmi:id="_456RoJeGEeWRPOHx9angRQ" type="3012">
+        <children xmi:type="notation:Node" xmi:id="_4564sJeGEeWRPOHx9angRQ" type="5007"/>
+        <children xmi:type="notation:Node" xmi:id="_458G0JeGEeWRPOHx9angRQ" type="7009">
+          <children xmi:type="notation:Node" xmi:id="__B15MJeGEeWRPOHx9angRQ" type="3013">
+            <children xmi:type="notation:Node" xmi:id="__B2gQJeGEeWRPOHx9angRQ" type="5004"/>
+            <children xmi:type="notation:Node" xmi:id="__B3HUJeGEeWRPOHx9angRQ" type="7013">
+              <children xmi:type="notation:Node" xmi:id="_hBa9EJeHEeWRPOHx9angRQ" type="3014">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_hBbkIJeHEeWRPOHx9angRQ" fontName="Ubuntu"/>
+                <element xmi:type="sca:JavaInterface" href="MultasWeb_SCA.composite#//@composite/@component.0/@service.0/@interfaceGroup.0"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hBbkIZeHEeWRPOHx9angRQ"/>
+              </children>
+              <styles xmi:type="notation:SortingStyle" xmi:id="__B3HUZeGEeWRPOHx9angRQ"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="__B3HUpeGEeWRPOHx9angRQ"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="__B7_0JeGEeWRPOHx9angRQ" type="7014">
+              <styles xmi:type="notation:SortingStyle" xmi:id="__B7_0ZeGEeWRPOHx9angRQ"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="__B7_0peGEeWRPOHx9angRQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="__B15MZeGEeWRPOHx9angRQ" fontName="Ubuntu"/>
+            <element xmi:type="sca:ComponentService" href="MultasWeb_SCA.composite#//@composite/@component.0/@service.0"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__B15MpeGEeWRPOHx9angRQ"/>
+          </children>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_458G0ZeGEeWRPOHx9angRQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_458G0peGEeWRPOHx9angRQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_459U8JeGEeWRPOHx9angRQ" type="7010">
+          <children xmi:type="notation:Node" xmi:id="_hg5uYJeHEeWRPOHx9angRQ" type="3024">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_hg5uYZeHEeWRPOHx9angRQ" fontName="Ubuntu"/>
+            <element xmi:type="sca:JavaImplementation" href="MultasWeb_SCA.composite#//@composite/@component.0/@implementationGroup.0"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hg5uYpeHEeWRPOHx9angRQ"/>
+          </children>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_459U8ZeGEeWRPOHx9angRQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_459U8peGEeWRPOHx9angRQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_45-jEJeGEeWRPOHx9angRQ" type="7011">
+          <children xmi:type="notation:Node" xmi:id="_iW2e8JeHEeWRPOHx9angRQ" type="3018">
+            <children xmi:type="notation:Node" xmi:id="_iW3tEJeHEeWRPOHx9angRQ" type="5005"/>
+            <children xmi:type="notation:Node" xmi:id="_iW47MJeHEeWRPOHx9angRQ" type="7015">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_iW47MZeHEeWRPOHx9angRQ"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_iW47MpeHEeWRPOHx9angRQ"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_iW5iQJeHEeWRPOHx9angRQ" type="7016">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_iW5iQZeHEeWRPOHx9angRQ"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_iW5iQpeHEeWRPOHx9angRQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_iW2e8ZeHEeWRPOHx9angRQ" fontName="Ubuntu"/>
+            <element xmi:type="sca:ComponentReference" href="MultasWeb_SCA.composite#//@composite/@component.0/@reference.0"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iW2e8peHEeWRPOHx9angRQ"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_kE3f8JeHEeWRPOHx9angRQ" type="3018">
+            <children xmi:type="notation:Node" xmi:id="_kE4HAJeHEeWRPOHx9angRQ" type="5005"/>
+            <children xmi:type="notation:Node" xmi:id="_kE4HAZeHEeWRPOHx9angRQ" type="7015">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_kE4HApeHEeWRPOHx9angRQ"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_kE4HA5eHEeWRPOHx9angRQ"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_kE4uEJeHEeWRPOHx9angRQ" type="7016">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_kE4uEZeHEeWRPOHx9angRQ"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_kE4uEpeHEeWRPOHx9angRQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_kE3f8ZeHEeWRPOHx9angRQ" fontName="Ubuntu"/>
+            <element xmi:type="sca:ComponentReference" href="MultasWeb_SCA.composite#//@composite/@component.0/@reference.1"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kE3f8peHEeWRPOHx9angRQ"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_lv5eYJeHEeWRPOHx9angRQ" type="3018">
+            <children xmi:type="notation:Node" xmi:id="_lv8hsJeHEeWRPOHx9angRQ" type="5005"/>
+            <children xmi:type="notation:Node" xmi:id="_lv9IwJeHEeWRPOHx9angRQ" type="7015">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_lv9IwZeHEeWRPOHx9angRQ"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_lv9IwpeHEeWRPOHx9angRQ"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_lv9v0JeHEeWRPOHx9angRQ" type="7016">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_lv9v0ZeHEeWRPOHx9angRQ"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_lv9v0peHEeWRPOHx9angRQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_lv5eYZeHEeWRPOHx9angRQ" fontName="Ubuntu"/>
+            <element xmi:type="sca:ComponentReference" href="MultasWeb_SCA.composite#//@composite/@component.0/@reference.2"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lv5eYpeHEeWRPOHx9angRQ"/>
+          </children>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_45-jEZeGEeWRPOHx9angRQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_45-jEpeGEeWRPOHx9angRQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_45_KIJeGEeWRPOHx9angRQ" type="7012">
+          <children xmi:type="notation:Node" xmi:id="_AV13sJeHEeWRPOHx9angRQ" type="3023">
+            <children xmi:type="notation:Node" xmi:id="_AV3F0JeHEeWRPOHx9angRQ" type="5006"/>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_AV13sZeHEeWRPOHx9angRQ" fontName="Ubuntu"/>
+            <element xmi:type="sca:PropertyValue" href="MultasWeb_SCA.composite#//@composite/@component.0/@property.0"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AV13speHEeWRPOHx9angRQ"/>
+          </children>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_45_KIZeGEeWRPOHx9angRQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_45_KIpeGEeWRPOHx9angRQ"/>
+        </children>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_456RoZeGEeWRPOHx9angRQ" fontName="Ubuntu"/>
+        <element xmi:type="sca:Component" href="MultasWeb_SCA.composite#//@composite/@component.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_456RopeGEeWRPOHx9angRQ" x="135" y="57" width="231" height="201"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_7dQ_MJeGEeWRPOHx9angRQ" type="3012">
+        <children xmi:type="notation:Node" xmi:id="_7dRmQJeGEeWRPOHx9angRQ" type="5007"/>
+        <children xmi:type="notation:Node" xmi:id="_7dRmQZeGEeWRPOHx9angRQ" type="7009">
+          <children xmi:type="notation:Node" xmi:id="_HxbfgJeHEeWRPOHx9angRQ" type="3013">
+            <children xmi:type="notation:Node" xmi:id="_HxcGkJeHEeWRPOHx9angRQ" type="5004"/>
+            <children xmi:type="notation:Node" xmi:id="_HxcGkZeHEeWRPOHx9angRQ" type="7013">
+              <children xmi:type="notation:Node" xmi:id="_LJvfIJeHEeWRPOHx9angRQ" type="3014">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_LJvfIZeHEeWRPOHx9angRQ" fontName="Ubuntu"/>
+                <element xmi:type="sca:JavaInterface" href="MultasWeb_SCA.composite#//@composite/@component.1/@service.0/@interfaceGroup.0"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LJvfIpeHEeWRPOHx9angRQ"/>
+              </children>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_HxcGkpeHEeWRPOHx9angRQ"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_HxcGk5eHEeWRPOHx9angRQ"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_HxctoJeHEeWRPOHx9angRQ" type="7014">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_HxctoZeHEeWRPOHx9angRQ"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_HxctopeHEeWRPOHx9angRQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_HxbfgZeHEeWRPOHx9angRQ" fontName="Ubuntu"/>
+            <element xmi:type="sca:ComponentService" href="MultasWeb_SCA.composite#//@composite/@component.1/@service.0"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HxbfgpeHEeWRPOHx9angRQ"/>
+          </children>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_7dRmQpeGEeWRPOHx9angRQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_7dRmQ5eGEeWRPOHx9angRQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_7dS0YJeGEeWRPOHx9angRQ" type="7010">
+          <children xmi:type="notation:Node" xmi:id="_MA8z8JeHEeWRPOHx9angRQ" type="3024">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_MA8z8ZeHEeWRPOHx9angRQ" fontName="Ubuntu"/>
+            <element xmi:type="sca:JavaImplementation" href="MultasWeb_SCA.composite#//@composite/@component.1/@implementationGroup.0"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MA9bAJeHEeWRPOHx9angRQ"/>
+          </children>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_7dS0YZeGEeWRPOHx9angRQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_7dS0YpeGEeWRPOHx9angRQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_7dS0Y5eGEeWRPOHx9angRQ" type="7011">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_7dTbcJeGEeWRPOHx9angRQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_7dTbcZeGEeWRPOHx9angRQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_7dTbcpeGEeWRPOHx9angRQ" type="7012">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_7dTbc5eGEeWRPOHx9angRQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_7dTbdJeGEeWRPOHx9angRQ"/>
+        </children>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_7dQ_MZeGEeWRPOHx9angRQ" fontName="Ubuntu"/>
+        <element xmi:type="sca:Component" href="MultasWeb_SCA.composite#//@composite/@component.1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7dQ_MpeGEeWRPOHx9angRQ" x="465" y="-1"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_Ckb2MJeHEeWRPOHx9angRQ" type="3012">
+        <children xmi:type="notation:Node" xmi:id="_CkcdQJeHEeWRPOHx9angRQ" type="5007"/>
+        <children xmi:type="notation:Node" xmi:id="_CkdEUJeHEeWRPOHx9angRQ" type="7009">
+          <children xmi:type="notation:Node" xmi:id="_Mxp4IJeHEeWRPOHx9angRQ" type="3013">
+            <children xmi:type="notation:Node" xmi:id="_MxqfMJeHEeWRPOHx9angRQ" type="5004"/>
+            <children xmi:type="notation:Node" xmi:id="_MxqfMZeHEeWRPOHx9angRQ" type="7013">
+              <children xmi:type="notation:Node" xmi:id="_O39dUJeHEeWRPOHx9angRQ" type="3014">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_O39dUZeHEeWRPOHx9angRQ" fontName="Ubuntu"/>
+                <element xmi:type="sca:JavaInterface" href="MultasWeb_SCA.composite#//@composite/@component.2/@service.0/@interfaceGroup.0"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O39dUpeHEeWRPOHx9angRQ"/>
+              </children>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_MxqfMpeHEeWRPOHx9angRQ"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_MxqfM5eHEeWRPOHx9angRQ"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_MxqfNJeHEeWRPOHx9angRQ" type="7014">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_MxqfNZeHEeWRPOHx9angRQ"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_MxqfNpeHEeWRPOHx9angRQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Mxp4IZeHEeWRPOHx9angRQ" fontName="Ubuntu"/>
+            <element xmi:type="sca:ComponentService" href="MultasWeb_SCA.composite#//@composite/@component.2/@service.0"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mxp4IpeHEeWRPOHx9angRQ"/>
+          </children>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_CkdEUZeHEeWRPOHx9angRQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_CkdEUpeHEeWRPOHx9angRQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_CkdrYJeHEeWRPOHx9angRQ" type="7010">
+          <children xmi:type="notation:Node" xmi:id="_QGH5kJeHEeWRPOHx9angRQ" type="3024">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_QGH5kZeHEeWRPOHx9angRQ" fontName="Ubuntu"/>
+            <element xmi:type="sca:JavaImplementation" href="MultasWeb_SCA.composite#//@composite/@component.2/@implementationGroup.0"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QGIgoJeHEeWRPOHx9angRQ"/>
+          </children>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_CkdrYZeHEeWRPOHx9angRQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_CkdrYpeHEeWRPOHx9angRQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_CkdrY5eHEeWRPOHx9angRQ" type="7011">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_CkdrZJeHEeWRPOHx9angRQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_CkdrZZeHEeWRPOHx9angRQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_CkdrZpeHEeWRPOHx9angRQ" type="7012">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_CkdrZ5eHEeWRPOHx9angRQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_CkdraJeHEeWRPOHx9angRQ"/>
+        </children>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_Ckb2MZeHEeWRPOHx9angRQ" fontName="Ubuntu"/>
+        <element xmi:type="sca:Component" href="MultasWeb_SCA.composite#//@composite/@component.2"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ckb2MpeHEeWRPOHx9angRQ" x="505" y="172"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_EZFqsJeHEeWRPOHx9angRQ" type="3012">
+        <children xmi:type="notation:Node" xmi:id="_EZHf4JeHEeWRPOHx9angRQ" type="5007"/>
+        <children xmi:type="notation:Node" xmi:id="_EZHf4ZeHEeWRPOHx9angRQ" type="7009">
+          <children xmi:type="notation:Node" xmi:id="_RVSbYJeHEeWRPOHx9angRQ" type="3013">
+            <children xmi:type="notation:Node" xmi:id="_RVTCcJeHEeWRPOHx9angRQ" type="5004"/>
+            <children xmi:type="notation:Node" xmi:id="_RVTCcZeHEeWRPOHx9angRQ" type="7013">
+              <children xmi:type="notation:Node" xmi:id="_cZehkJeHEeWRPOHx9angRQ" type="3014">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_cZehkZeHEeWRPOHx9angRQ" fontName="Ubuntu"/>
+                <element xmi:type="sca:JavaInterface" href="MultasWeb_SCA.composite#//@composite/@component.3/@service.0/@interfaceGroup.0"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cZehkpeHEeWRPOHx9angRQ"/>
+              </children>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_RVUQkJeHEeWRPOHx9angRQ"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_RVUQkZeHEeWRPOHx9angRQ"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_RVU3oJeHEeWRPOHx9angRQ" type="7014">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_RVU3oZeHEeWRPOHx9angRQ"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_RVU3opeHEeWRPOHx9angRQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_RVSbYZeHEeWRPOHx9angRQ" fontName="Ubuntu"/>
+            <element xmi:type="sca:ComponentService" href="MultasWeb_SCA.composite#//@composite/@component.3/@service.0"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RVSbYpeHEeWRPOHx9angRQ"/>
+          </children>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_EZHf4peHEeWRPOHx9angRQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_EZHf45eHEeWRPOHx9angRQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_EZHf5JeHEeWRPOHx9angRQ" type="7010">
+          <children xmi:type="notation:Node" xmi:id="_ddGhwJeHEeWRPOHx9angRQ" type="3024">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_ddGhwZeHEeWRPOHx9angRQ" fontName="Ubuntu"/>
+            <element xmi:type="sca:JavaImplementation" href="MultasWeb_SCA.composite#//@composite/@component.3/@implementationGroup.0"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ddGhwpeHEeWRPOHx9angRQ"/>
+          </children>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_EZHf5ZeHEeWRPOHx9angRQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_EZHf5peHEeWRPOHx9angRQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_EZIG8JeHEeWRPOHx9angRQ" type="7011">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_EZIG8ZeHEeWRPOHx9angRQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_EZIG8peHEeWRPOHx9angRQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_EZIG85eHEeWRPOHx9angRQ" type="7012">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_EZIG9JeHEeWRPOHx9angRQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_EZIG9ZeHEeWRPOHx9angRQ"/>
+        </children>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_EZFqsZeHEeWRPOHx9angRQ" fontName="Ubuntu"/>
+        <element xmi:type="sca:Component" href="MultasWeb_SCA.composite#//@composite/@component.3"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EZFqspeHEeWRPOHx9angRQ" x="470" y="363"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_1U_ZYZeGEeWRPOHx9angRQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_1U_ZYpeGEeWRPOHx9angRQ"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_1U7vAZeGEeWRPOHx9angRQ" fontName="Ubuntu"/>
+    <element xmi:type="sca:Composite" href="MultasWeb_SCA.composite#//@composite"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1U7vApeGEeWRPOHx9angRQ" width="821" height="596"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_1TLbgZeGEeWRPOHx9angRQ"/>
+  <element xmi:type="sca:DocumentRoot" href="MultasWeb_SCA.composite#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_jkTJgJeHEeWRPOHx9angRQ" type="4003" source="_iW2e8JeHEeWRPOHx9angRQ" target="_HxbfgJeHEeWRPOHx9angRQ">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_jkTJgZeHEeWRPOHx9angRQ" routing="Rectilinear" smoothness="Normal"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_jkTJgpeHEeWRPOHx9angRQ" fontName="Ubuntu"/>
+    <element xmi:type="sca:Wire" href="MultasWeb_SCA.composite#//@composite/@wire.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_jkTJg5eHEeWRPOHx9angRQ" points="[20, -9, -129, 49]$[166, -78, 17, -20]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_lZiz4JeHEeWRPOHx9angRQ" type="4003" source="_kE3f8JeHEeWRPOHx9angRQ" target="_Mxp4IJeHEeWRPOHx9angRQ">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_lZiz4ZeHEeWRPOHx9angRQ" routing="Rectilinear" smoothness="Normal"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_lZja8JeHEeWRPOHx9angRQ" fontName="Ubuntu"/>
+    <element xmi:type="sca:Wire" href="MultasWeb_SCA.composite#//@composite/@wire.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lZja8ZeHEeWRPOHx9angRQ" points="[20, 9, -134, -70]$[171, 59, 17, -20]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_nVva0JeHEeWRPOHx9angRQ" type="4003" source="_lv5eYJeHEeWRPOHx9angRQ" target="_RVSbYJeHEeWRPOHx9angRQ">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_nVva0ZeHEeWRPOHx9angRQ" routing="Rectilinear" smoothness="Normal"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_nVva0peHEeWRPOHx9angRQ" fontName="Ubuntu"/>
+    <element xmi:type="sca:Wire" href="MultasWeb_SCA.composite#//@composite/@wire.2"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nVva05eHEeWRPOHx9angRQ" points="[21, 30, -135, -199]$[156, 220, 0, -9]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nVzFMJeHEeWRPOHx9angRQ" id="(0.475,0.15)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nVzFMZeHEeWRPOHx9angRQ" id="(0.525,0.225)"/>
+  </edges>
+</notation:Diagram>
