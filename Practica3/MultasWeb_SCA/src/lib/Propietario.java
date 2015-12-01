@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * Clase Propietario, informacion basica, metodo constructor y gets
- * @author daniel
+ * @author Daniel Correa Barrios
  *
  */
 

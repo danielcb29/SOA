@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * Clase Vehiculo, informacion basica, metodo contructor y gets
- * @author daniel
+ * @author Daniel Correa Barrios
  *	
  */
 @XmlAccessorType(XmlAccessType.FIELD)

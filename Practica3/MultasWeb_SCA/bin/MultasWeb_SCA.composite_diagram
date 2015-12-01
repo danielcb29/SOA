@@ -223,7 +223,7 @@
         </children>
         <styles xmi:type="notation:ShapeStyle" xmi:id="_Ckb2MZeHEeWRPOHx9angRQ" fontName="Ubuntu"/>
         <element xmi:type="sca:Component" href="MultasWeb_SCA.composite#//@composite/@component.2"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ckb2MpeHEeWRPOHx9angRQ" x="505" y="172"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ckb2MpeHEeWRPOHx9angRQ" x="685" y="111"/>
       </children>
       <children xmi:type="notation:Node" xmi:id="_EZFqsJeHEeWRPOHx9angRQ" type="3012">
         <children xmi:type="notation:Node" xmi:id="_EZHf4JeHEeWRPOHx9angRQ" type="5007"/>
@@ -269,14 +269,14 @@
         </children>
         <styles xmi:type="notation:ShapeStyle" xmi:id="_EZFqsZeHEeWRPOHx9angRQ" fontName="Ubuntu"/>
         <element xmi:type="sca:Component" href="MultasWeb_SCA.composite#//@composite/@component.3"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EZFqspeHEeWRPOHx9angRQ" x="470" y="363"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EZFqspeHEeWRPOHx9angRQ" x="460" y="166"/>
       </children>
       <styles xmi:type="notation:SortingStyle" xmi:id="_1U_ZYZeGEeWRPOHx9angRQ"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_1U_ZYpeGEeWRPOHx9angRQ"/>
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_1U7vAZeGEeWRPOHx9angRQ" fontName="Ubuntu"/>
     <element xmi:type="sca:Composite" href="MultasWeb_SCA.composite#//@composite"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1U7vApeGEeWRPOHx9angRQ" width="821" height="596"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1U7vApeGEeWRPOHx9angRQ" width="976" height="596"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_1TLbgZeGEeWRPOHx9angRQ"/>
   <element xmi:type="sca:DocumentRoot" href="MultasWeb_SCA.composite#/"/>

@@ -14,10 +14,10 @@ import api.ConsultaMulta;
 import api.DetalleMulta;
 /**
  * Clase que permite hacer el web service , metodos de inicializacion y metodos web
- * @author daniel
+ * @author Daniel Correa Barrios
  *
  */
-@Service(ConsultaMulta.class)
+@Service(ConsultaMulta.class) //Especifica que su service sera la clase ConsultaMulta
 public class ConsultaMultaImp implements ConsultaMulta{
 	//Datos estaticos para vehiculos
 	private String[] placas = {"ZNL538","VCD709","CFN150","SSH485","HEP908"};

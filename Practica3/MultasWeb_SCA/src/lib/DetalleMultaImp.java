@@ -15,10 +15,10 @@ import api.MultasService;
 
 /**
  * Clase que permite hacer el web service , metodos de inicializacion y metodos web
- * @author daniel
+ * @author Daniel Correa Barrios
  *
  */
-@Service(DetalleMulta.class)
+@Service(DetalleMulta.class)  //Especifica que su service sera la clase DetalleMulta
 public class DetalleMultaImp implements DetalleMulta {
 	//Datos estaticos para vehiculos
 	private String[] placas = {"ZNL538","VCD709","CFN150","SSH485","HEP908"};

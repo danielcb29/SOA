@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlType;
 /**
  * Clase Multa, permite relacionar las demas clases y asignar una fecha y valor a la infraccion 
  * Informacion basica, gets y sets 
- * @author daniel
+ * @author Daniel Correa Barrios
  *
  */
 @XmlAccessorType(XmlAccessType.FIELD)

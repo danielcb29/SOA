@@ -14,10 +14,10 @@ import api.MultasService;
 import api.PropietarioMulta;
 /**
  * Clase que permite hacer el web service , metodos de inicializacion y metodos web
- * @author daniel
+ * @author Daniel Correa Barrios
  *
  */
-@Service(PropietarioMulta.class)
+@Service(PropietarioMulta.class)  //Especifica que su service sera la clase PropietarioMulta
 public class PropietarioMultaImp implements PropietarioMulta {
 	//Datos estaticos para vehiculos
 	private String[] placas = {"ZNL538","VCD709","CFN150","SSH485","HEP908"};

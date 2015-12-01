@@ -9,16 +9,29 @@ import java.rmi.registry.Registry;
 
 import lib.Ventana;
 import api.MultasService;
-
+/**
+ *  Cliente RMI para prueba de la aplicacion SCA. 
+ * @author Daniel Correa Barrios
+ *
+ */
 public class MultasWebClientRMI {
 	public static void main(String[] args) {
-		Ventana v = new Ventana("Cliente RMI de Multas Web SCA");
+		Ventana v = new Ventana("Cliente RMI de Multas Web SCA"); //Inicializacion de la ventana que mostrara los datos de las consultas
+		/**
+		 * Variables de acceso a la app
+		 */
 		String host ;
 		String port ;
 		String nameService;
+		/**
+		 * Variables donde se almacenaran los resultados
+		 */
 		Boolean resultConsulta;
 		String resultDetalle;
 		String resultPropietario;
+		/**
+		 * Se buscan parametros en la ejecucion, en caso contrario se asigan por defecto
+		 */
 		try {
 	           host = args[0];
 	    } catch (ArrayIndexOutOfBoundsException e) {
@@ -38,9 +51,13 @@ public class MultasWebClientRMI {
 		try {
 			
 			
-			/* Se obtiene de forma remota una instancia del servicio CalculatorService */
+			/* Se obtiene de forma remota una instancia del servicio MultasService */
 			Registry registry = LocateRegistry.getRegistry(host, Integer.parseInt(port));
 			MultasService MultasServiceObj = (MultasService) registry.lookup( nameService);
+			
+			/**
+			 * Se ejecutan los metodos de la clase MultasService, se guardan sus resultados y se muestran en ventana
+			 */
 			
 			resultConsulta=MultasServiceObj.consultaMulta("ZNL538");
 			v.addText("Consulta Multa:\n");
